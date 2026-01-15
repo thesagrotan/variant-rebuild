@@ -156,6 +156,8 @@ export const StyleTweaker = () => {
         };
 
         // Check if styles have actually changed to avoid unnecessary updates/loops
+        // This is critical effectively preventing infinite loops where updateStyles triggers a re-render
+        // which triggers this effect again.
         if (JSON.stringify(newStyles) !== JSON.stringify(styles)) {
             updateStyles(newStyles);
         }

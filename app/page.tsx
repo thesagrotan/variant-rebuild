@@ -1,19 +1,51 @@
+'use client';
+
+import { useState } from 'react';
+import { Leva } from 'leva';
+import { LayoutGroup, AnimatePresence } from 'framer-motion';
 import { Chat } from '@/components/ui/Chat';
 import { Canvas } from '@/components/ui/Canvas';
 import { Footer } from '@/components/ui/Footer';
 import { ScrollProvider } from '@/components/ScrollContext';
+import ProjectModal from '@/components/ProjectModal';
+
 export default function Home() {
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
+
+  const handleProjectClick = (projectId: string) => {
+    setSelectedProject(projectId);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <main className="relative h-screen w-screen overflow-hidden text-white selection:bg-white/20">
-      <ScrollProvider>
-        {/* Background Layer (Z-0) */}
-        <Canvas />
+      <Leva hidden collapsed />
+      <LayoutGroup>
+        <ScrollProvider>
+          {/* Background Layer (Z-0) */}
+          <Canvas />
 
-        {/* Bottom Content Area (Manifesto + Email Input) */}
-        <div className="fixed bottom-8 left-6 z-20 flex flex-col gap-8 max-w-[400px]">
-          <Chat />
-        </div>
-      </ScrollProvider>
+          {/* Bottom Content Area (Manifesto + Email Input + Selected Work) */}
+          <div className="fixed bottom-0 left-0 w-full h-full z-20 flex flex-col items-center justify-end pointer-events-none">
+            {/* Chat container needs pointer-events-auto for children */}
+            <div className="w-full max-w-[424px] pointer-events-auto pb-8">
+              <Chat onProjectClick={handleProjectClick} />
+            </div>
+          </div>
+        </ScrollProvider>
+
+        <AnimatePresence>
+          {selectedProject && (
+            <ProjectModal
+              projectId={selectedProject}
+              onClose={handleCloseModal}
+            />
+          )}
+        </AnimatePresence>
+      </LayoutGroup>
       <Footer />
     </main>
   );

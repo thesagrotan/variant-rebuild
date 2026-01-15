@@ -6,6 +6,13 @@ import { cn } from '@/lib/utils';
 import { useStyles } from '@/components/StylesContext';
 import { useScrollContext } from '@/components/ScrollContext';
 
+import { siteContent, parseBold } from '@/data/siteContent';
+import { projects } from '@/data/projects';
+import PortfolioProjectCard from '@/components/PortfolioProjectCard';
+import ProjectLink from '@/components/ProjectLink';
+import { useAnimationControls } from '@/components/AnimationControls';
+import { CLASSES } from '@/config/tokens';
+
 type Status = 'idle' | 'typing' | 'submitting' | 'success';
 
 interface Message {
@@ -14,12 +21,24 @@ interface Message {
     sender: 'user' | 'assistant';
 }
 
-export const Chat = () => {
+interface ChatProps {
+    onProjectClick?: (projectId: string) => void;
+}
+
+export const Chat = ({ onProjectClick }: ChatProps) => {
     const { styles } = useStyles();
     const [status, setStatus] = useState<Status>('idle');
     const [inputValue, setInputValue] = useState('');
     const { scrollY } = useScrollContext();
     const scrollRef = useRef<HTMLDivElement>(null);
+    const {
+        cardHoverScale,
+        cardHoverDuration,
+        layoutType,
+        layoutStiffness,
+        layoutExitDamping,
+        layoutDuration
+    } = useAnimationControls();
 
     useEffect(() => {
         const handleWheel = (e: WheelEvent) => {
@@ -63,16 +82,50 @@ export const Chat = () => {
                 }
             `}} />
             {/* Manifesto Text */}
-            <div ref={scrollRef} onScroll={handleScroll} className="Chat-manifesto h-screen flex flex-col gap-4 pt-[80vh] justify-start overflow-scroll scrollbar-hide text-white mx-auto">
+            <div ref={scrollRef} onScroll={handleScroll} className="Chat-manifesto h-screen flex flex-col gap-4 pt-[80vh] justify-start overflow-scroll scrollbar-hide text-white mx-auto pb-32">
 
                 <p className="text-[20px] font-medium leading-[1.3] tracking-tight">
                     From brief to MVP
                 </p>
-                <p className="text-[14px] text-white/50 leading-[1.5] max-w-[340px]">
-                    who transforms complex systems into intuitive experiences while enabling brands to tell their story effectively.                </p>
-                <p className="text-[14px] text-white/50 leading-[1.5] max-w-[340px]">
-                    With over 15 years of experience for the last years helping startups on b2b and b2c solutions  in the areas fo mobility, fintech, DeFi, and digital health.
-                </p>
+                <div className="flex flex-col gap-8 text-[14px] text-white/50 leading-[1.5] max-w-[340px]">
+                    {[siteContent.hero.intro, siteContent.hero.experience].map((text, idx) => (
+                        <p key={idx} className={`${idx === 1 ? 'whitespace-pre-wrap' : ''}`}>
+                            {parseBold(text).map(({ text: t, bold, key }) => (
+                                <span key={key} className={bold ? 'text-white font-medium' : ''}>{t}</span>
+                            ))}
+                        </p>
+                    ))}
+                </div>
+
+                {/* Selected Work */}
+                <div className="flex flex-col gap-10 w-full mt-24">
+                    <h2 className="text-[20px] font-medium text-white">{siteContent.selectedWork}</h2>
+                    <div className={`flex flex-col ${CLASSES.cardGap}`}>
+                        {projects.map((project) => (
+                            <PortfolioProjectCard
+                                key={project.id}
+                                project={project}
+                                onClick={onProjectClick || (() => { })}
+                                animation={{
+                                    hover: { scale: cardHoverScale, duration: cardHoverDuration },
+                                    layout: { type: layoutType, damping: layoutExitDamping, stiffness: layoutStiffness, duration: layoutDuration }
+                                }}
+                            />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Here to help you with */}
+                <div className={`mt-20 flex flex-col gap-8 w-full`}>
+                    <h2 className="text-[20px] font-medium text-white">{siteContent.helpWith.heading}</h2>
+                    <div className="flex flex-wrap gap-x-8 gap-y-4">
+                        {siteContent.helpWith.links.map((column, idx) => (
+                            <div key={idx} className={`flex flex-col ${CLASSES.linkColumn}`}>
+                                {column.map((label) => <ProjectLink key={label} label={label} />)}
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
 
             {/* Input Area */}

@@ -1,0 +1,71 @@
+{
+    "projects": [
+        {
+            "id": "credcore",
+            "title": "CredCore",
+            "logo": "/public/images/credcore.svg",
+            "year": "2023-2025",
+            "categories": [
+                "UX/UI Design",
+                "Design Systems",
+                "Framer"
+            ],
+            "longDescription": "CredCore is an AI-powered fintech platform transforming how enterprises manage complex debt agreements.\n\nThrough iterative exploration, I designed and tested new ways to organize and visualize intricate financial data. In parallel, I built and maintained the platform's marketing website in Framer, ensuring design fidelity and high performance. I also created a unified design system that integrates shadcn/ui, bridging design and engineering under a refreshed brand while establishing consistent patterns across all product touchpoints.",
+            "images": [
+                {
+                    "src": "/images/projects/credcore-2.png",
+                    "alt": "CredCore Project Screenshot 2",
+                    "card": {},
+                    "detail": {
+                        "objectPosition": "left top"
+                    },
+                    "width": 2560,
+                    "height": 1664
+                },
+                {
+                    "src": "/images/projects/credcore-1.png",
+                    "alt": "CredCore Project Screenshot 1",
+                    "card": {},
+                    "detail": {
+                        "objectPosition": "left top"
+                    },
+                    "width": 2560,
+                    "height": 1664
+                },
+                {
+                    "src": "/images/projects/credcore-3.png",
+                    "alt": "CredCore Project Screenshot 3",
+                    "card": {
+                        "objectPosition": "left top",
+                        "scale": 2,
+                        "translateX": "-6%"
+                    },
+                    "detail": {
+                        "objectPosition": "left top"
+                    },
+                    "width": 2560,
+                    "height": 1664
+                }
+            ]
+        },
+        {
+            "id": "mobility-platform",
+            "title": "Queue",
+            "year": "2022-2023",
+            "logo": "/public/images/queue.svg",
+            "categories": [
+                "Product Design"
+            ],
+            "longDescription": "Queue helps you establish expert authority by providing precise responses to questions from high-intent audiences.\n\n This redesign improves usability with a streamlined, user-friendly interface and introduces a distinctive ranking meter that creates a consistent and recognizable signature across the company’s tools.",
+            "images": []
+        },
+        {
+            "id": "brand-identities",
+            "title": "Brand Identities",
+            "logoText": "Identities",
+            "categories": [],
+            "longDescription": "Brand work for different companies.",
+            "images": []
+        }
+    ]
+}
