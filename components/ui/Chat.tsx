@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { useStyles } from '@/components/StylesContext';
+import { useScrollContext } from '@/components/ScrollContext';
 
 type Status = 'idle' | 'typing' | 'submitting' | 'success';
 
@@ -17,6 +18,7 @@ export const Chat = () => {
     const { styles } = useStyles();
     const [status, setStatus] = useState<Status>('idle');
     const [inputValue, setInputValue] = useState('');
+    const { scrollY } = useScrollContext();
     const scrollRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -29,6 +31,12 @@ export const Chat = () => {
         window.addEventListener('wheel', handleWheel);
         return () => window.removeEventListener('wheel', handleWheel);
     }, []);
+
+    const handleScroll = () => {
+        if (scrollRef.current) {
+            scrollY.set(scrollRef.current.scrollTop);
+        }
+    };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -44,8 +52,18 @@ export const Chat = () => {
 
     return (
         <div className={cn("Chat", styles.containers.chat.wrapper)}>
+            <style dangerouslySetInnerHTML={{
+                __html: `
+                .Chat-manifesto::-webkit-scrollbar {
+                    display: none !important;
+                }
+                .Chat-manifesto {
+                    -ms-overflow-style: none !important;
+                    scrollbar-width: none !important;
+                }
+            `}} />
             {/* Manifesto Text */}
-            <div ref={scrollRef} className="Chat-manifesto h-screen flex flex-col gap-4 bg-red-500 pt-[80vh] justify-start overflow-scroll text-white mx-auto">
+            <div ref={scrollRef} onScroll={handleScroll} className="Chat-manifesto h-screen flex flex-col gap-4 pt-[80vh] justify-start overflow-scroll scrollbar-hide text-white mx-auto">
 
                 <p className="text-[20px] font-medium leading-[1.3] tracking-tight">
                     From brief to MVP
@@ -74,7 +92,7 @@ export const Chat = () => {
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
                             disabled={status === 'success'}
-                            placeholder="Curious? Continue with your email"
+                            placeholder="Send me a message"
                             className={cn(
                                 "w-full h-full bg-transparent border-none outline-none pl-5 pr-12 text-[14px] text-white/90 placeholder:text-white/30 transition-all duration-500",
                                 status === 'success' && "opacity-0 invisible pl-16"

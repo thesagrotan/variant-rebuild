@@ -59,6 +59,8 @@ export const Canvas = () => {
                         tag={frame.tag}
                         initialX={x}
                         initialY={y}
+                        relX={frame.initialX.relX}
+                        relY={frame.initialX.relY}
                         width={frame.width}
                         height={frame.height}
                         rotation={frame.rotation}
