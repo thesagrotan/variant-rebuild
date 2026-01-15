@@ -10,6 +10,7 @@ export const GlobalStyler = () => {
         // Apply global styles to body
         if (styles.globals) {
             document.body.style.color = styles.globals.text;
+            document.body.style.background = styles.globals.background;
         }
 
         // Cleanup function to reset if component unmounts (optional, but good practice)

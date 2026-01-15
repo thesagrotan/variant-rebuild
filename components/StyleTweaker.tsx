@@ -155,33 +155,33 @@ export const StyleTweaker = () => {
         };
     }, []); // Empty dependency array creates controls once.
 
-    // Gradient Helper Effect
-    useEffect(() => {
-        // console.log('Leva Values:', values); // Debug
-        if (values.useGradient) {
-            let gradient;
-            if (values.gradientType === 'radial') {
-                gradient = `radial-gradient(circle at ${values.gradientPosition}, ${values.gradientStart} 0%, ${values.gradientEnd} 70%)`;
-            } else {
-                gradient = `linear-gradient(${values.gradientAngle}deg, ${values.gradientStart}, ${values.gradientEnd})`;
-            }
-            set({ bgValue: gradient });
-        }
-    }, [values.useGradient, values.gradientType, values.gradientStart, values.gradientEnd, values.gradientAngle, values.gradientPosition, set]);
-
     // Sync Leva changes back to Context
     useEffect(() => {
         // Ensure globals exist before syncing
         if (!styles.globals) return;
 
-        // e.g. { background: "...", text: "...", frameTag: "..." }
+        let background = typeof values.bgValue === 'string' ? values.bgValue.trim() : values.bgValue;
 
-        // Wait, if keys clash across folders? (e.g. 'background' in two places).
-        // Best to ensure unique keys in the schema definition. I used unique keys above (frameTag, navRoot, etc).
+        // Override with gradient if enabled
+        if (values.useGradient) {
+            console.log('Gradient Debug:', {
+                type: values.gradientType,
+                start: values.gradientStart,
+                end: values.gradientEnd,
+                angle: values.gradientAngle,
+                pos: values.gradientPosition
+            });
+
+            if (values.gradientType === 'radial') {
+                background = `radial-gradient(circle at ${values.gradientPosition}, ${values.gradientStart} 0%, ${values.gradientEnd} 70%)`;
+            } else {
+                background = `linear-gradient(${values.gradientAngle}deg, ${values.gradientStart}, ${values.gradientEnd})`;
+            }
+        }
 
         const newStyles = {
             globals: {
-                background: typeof values.bgValue === 'string' ? values.bgValue.trim() : values.bgValue,
+                background,
                 text: values.text,
             },
             containers: {
@@ -204,7 +204,6 @@ export const StyleTweaker = () => {
         };
 
         // Check if styles have actually changed to avoid unnecessary updates/loops
-        // Simple JSON stringify comparison is effective for this size of object
         if (JSON.stringify(newStyles) !== JSON.stringify(styles)) {
             updateStyles(newStyles);
         }
