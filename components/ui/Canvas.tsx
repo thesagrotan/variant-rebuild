@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { Frame } from './Frame';
 import { FRAMES } from '@/lib/frames';
+import { FrameContent } from './FrameContent';
 
 
 export const Canvas = () => {
@@ -40,9 +41,6 @@ export const Canvas = () => {
 
     return (
         <div className="Canvas fixed inset-0 z-0 overflow-hidden select-none">
-            {/* Background radial gradient - REMOVED, handled by Global Styles */}
-            {/* <div className="absolute inset-x-0 top-0 h-[70vh] bg-[radial-gradient(circle_at_50%_0%,rgba(255,87,34,0.12)_0,transparent_70%)] opacity-80 pointer-events-none" /> */}
-
             {/* Grid background */}
             <div
                 className="Canvas-grid absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -66,23 +64,10 @@ export const Canvas = () => {
                         rotation={frame.rotation}
                         scale={scale}
                     >
-                        {renderFrameContent(frame.component)}
+                        <FrameContent componentType={frame.component} />
                     </Frame>
                 );
             })}
-        </div>
-    );
-};
-
-const renderFrameContent = (componentType: string) => {
-    return (
-        <div className="w-full h-full bg-black/20 relative overflow-hidden group">
-            <img
-                src="/assets/dummy-frame.png"
-                alt="Dummy content"
-                className="w-full h-full object-cover opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
         </div>
     );
 };
