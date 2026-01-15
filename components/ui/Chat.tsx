@@ -17,6 +17,18 @@ export const Chat = () => {
     const { styles } = useStyles();
     const [status, setStatus] = useState<Status>('idle');
     const [inputValue, setInputValue] = useState('');
+    const scrollRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleWheel = (e: WheelEvent) => {
+            if (scrollRef.current && !scrollRef.current.contains(e.target as Node)) {
+                scrollRef.current.scrollTop += e.deltaY;
+            }
+        };
+
+        window.addEventListener('wheel', handleWheel);
+        return () => window.removeEventListener('wheel', handleWheel);
+    }, []);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -33,7 +45,7 @@ export const Chat = () => {
     return (
         <div className={cn("Chat", styles.containers.chat.wrapper)}>
             {/* Manifesto Text */}
-            <div className="Chat-manifesto flex flex-col gap-4 text-white mx-auto">
+            <div ref={scrollRef} className="Chat-manifesto h-screen flex flex-col gap-4 bg-red-500 pt-[80vh] justify-start overflow-scroll text-white mx-auto">
 
                 <p className="text-[20px] font-medium leading-[1.3] tracking-tight">
                     From brief to MVP

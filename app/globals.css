@@ -51,4 +51,5 @@ body {
   color: var(--white-90);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
