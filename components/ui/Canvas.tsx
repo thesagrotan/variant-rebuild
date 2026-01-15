@@ -2,11 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { Frame } from './Frame';
-import { RamsClock } from './RamsClock';
-import { RadarChart } from './RadarChart';
-import { MediaPlayer } from './MediaPlayer';
-import { PoeticWeather } from './PoeticWeather';
-import { VariantManifesto } from './VariantManifesto';
 import { FRAMES } from '@/lib/frames';
 
 
@@ -80,70 +75,14 @@ export const Canvas = () => {
 };
 
 const renderFrameContent = (componentType: string) => {
-    switch (componentType) {
-        case 'VariantLogo':
-            return (
-                <div className="w-full h-full bg-black flex items-center justify-center p-8">
-                    <img src="/assets/designs.svg" alt="Variant Logo" className="w-full h-auto opacity-90 transition-opacity hover:opacity-100" />
-                </div>
-            );
-        case 'ProductivityApp':
-            return (
-                <img src="/assets/make.svg" alt="Productivity App" className="w-full h-full object-cover p-2 opacity-80" />
-            );
-        case 'RamsClock':
-            return <RamsClock />;
-        case 'RadarChart':
-            return <RadarChart />;
-        case 'PoeticWeather':
-            return <PoeticWeather />;
-        case 'MediaPlayer':
-            return <MediaPlayer />;
-        case 'PredictionMarket':
-            return (
-                <div className="w-full h-full bg-[#0D0D0D] p-6 flex flex-col gap-4">
-                    <div className="flex flex-col gap-1">
-                        <span className="text-[10px] text-white/30 uppercase tracking-widest">P/E Ratio</span>
-                        <span className="text-[32px] font-light text-white/90">29</span>
-                    </div>
-                    <div className="flex-1 rounded-[8px] bg-white/5 border border-white/5 relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-t from-orange-500/20 to-transparent" />
-                    </div>
-                </div>
-            );
-        case 'NavBar':
-            return (
-                <div className="w-full h-full bg-[#0F0F0F] flex items-center justify-between px-4">
-                    <div className="flex gap-4 items-center">
-                        <div className="w-8 h-8 rounded-[8px] bg-white/10 flex items-center justify-center">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
-                        </div>
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-white/5" />
-                </div>
-            );
-        case 'StoriesWidget':
-            return (
-                <div className="w-full h-full bg-[#111] p-4">
-                    <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-yellow-400 to-rose-500 p-[1px]">
-                            <div className="w-full h-full rounded-full bg-black" />
-                        </div>
-                        <span className="text-[11px] font-medium text-white/80">Martina</span>
-                    </div>
-                </div>
-            );
-        case 'ScribblePad':
-            return (
-                <div className="w-full h-full bg-[#111] p-4 flex flex-col items-center justify-center">
-                    <svg width="80" height="80" viewBox="0 0 100 100" fill="none" stroke="#FF5722" strokeWidth="2">
-                        <path d="M20 50 Q35 20, 50 50 T80 50" opacity="0.6" />
-                    </svg>
-                </div>
-            );
-        case 'VariantManifesto':
-            return <VariantManifesto />;
-        default:
-            return null;
-    }
+    return (
+        <div className="w-full h-full bg-black/20 relative overflow-hidden group">
+            <img
+                src="/assets/dummy-frame.png"
+                alt="Dummy content"
+                className="w-full h-full object-cover opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+        </div>
+    );
 };
