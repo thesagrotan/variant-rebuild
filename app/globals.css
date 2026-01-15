@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@source "./styles.json";
+
+:root {
+  /* Colors */
+  --bg-solid: rgb(17, 17, 17);
+  --bg-blend: rgba(17, 17, 17, 0.5);
+  --bg-medium: rgba(51, 51, 51, 0.5);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-85: rgba(255, 255, 255, 0.85);
+  --white-90: rgba(255, 255, 255, 1);
+
+  /* Dimensions & Constants */
+  --rounded-lg: 12px;
+  --rounded-md: 9px;
+  --max-page-content-width: calc(100vw - 32px);
+  /* approx */
+
+  /* Animation Bezier Curves */
+  --transition-cubic: 0.55s cubic-bezier(0.19, 1, 0.22, 1);
+  --success-transition-easing: cubic-bezier(0.19, 1, 0.22, 1);
+  --success-transition-duration: 0.6s;
+
+  /* App Defaults */
+  --background: var(--bg-solid);
+  --foreground: var(--white-90);
+}
+
+@theme inline {
+  --color-bg-solid: var(--bg-solid);
+  --color-bg-blend: var(--bg-blend);
+  --color-bg-medium: var(--bg-medium);
+  --color-white-10: var(--white-10);
+  --color-white-20: var(--white-20);
+  --color-white-50: var(--white-50);
+  --color-white-70: var(--white-70);
+  --color-white-85: var(--white-85);
+  --color-white-90: var(--white-90);
+
+  --radius-lg: var(--rounded-lg);
+  --radius-md: var(--rounded-md);
+
+  --ease-premium: var(--transition-cubic);
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  color: var(--white-90);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18">
+  <defs>
+    <symbol id="frame-00">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.14378 7.25 -1.375 4.0041 -1.375 0C-1.375 -4.00406 -0.14378 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.89102 7.25 4.12 4.0041 4.12 0C4.12 -4.00406 2.89102 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-01">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.1078 7.25 -1.30985 4.0041 -1.30985 0C-1.30985 -4.00406 -0.1078 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.92976 7.25 4.19015 4.0041 4.19015 0C4.19015 -4.00406 2.92976 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-02">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.063795 7.25 -1.23017 4.0041 -1.23017 0C-1.23017 -4.00406 -0.063795 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.97377 7.25 4.26983 4.0041 4.26983 0C4.26983 -4.00406 2.97377 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-03">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.0141273 7.25 -1.14024 4.0041 -1.14024 0C-1.14024 -4.00406 -0.0141273 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.02343 7.25 4.35976 4.0041 4.35976 0C4.35976 -4.00406 3.02343 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-04">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.0416585 7.25 -1.03923 4.0041 -1.03923 0C-1.03923 -4.00406 0.0416585 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.07922 7.25 4.46077 4.0041 4.46077 0C4.46077 -4.00406 3.07922 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-05">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.104071 7.25 -0.926226 4.0041 -0.926226 0C-0.926226 -4.00406 0.104071 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.14163 7.25 4.57377 4.0041 4.57377 0C4.57377 -4.00406 3.14163 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-06">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.173681 7.25 -0.800185 4.0041 -0.800185 0C-0.800185 -4.00406 0.173681 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.21124 7.25 4.69982 4.0041 4.69982 0C4.69982 -4.00406 3.21124 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-07">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.251146 7.25 -0.659923 4.0041 -0.659923 0C-0.659923 -4.00406 0.251146 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.28871 7.25 4.84008 4.0041 4.84008 0C4.84008 -4.00406 3.28871 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-08">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.337212 7.25 -0.504085 4.0041 -0.504085 0C-0.504085 -4.00406 0.337212 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.37477 7.25 4.99591 4.0041 4.99591 0C4.99591 -4.00406 3.37477 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-09">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.60482 7.25 -5.83112 4.0041 -5.83112 0C-5.83112 -4.00406 -2.60482 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.432738 7.25 -0.331119 4.0041 -0.331119 0C-0.331119 -4.00406 0.432738 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.4703 7.25 5.16888 4.0041 5.16888 0C5.16888 -4.00406 3.4703 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-10">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.49884 7.25 -5.63922 4.0041 -5.63922 0C-5.63922 -4.00406 -2.49884 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.538721 7.25 -0.13922 4.0041 -0.13922 0C-0.13922 -4.00406 0.538721 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.57628 7.25 5.36078 4.0041 5.36078 0C5.36078 -4.00406 3.57628 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-11">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.38124 7.25 -5.4263 4.0041 -5.42629 0C-5.4263 -4.00406 -2.38124 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.656315 7.25 0.0737041 4.0041 0.0737041 0C0.0737041 -4.00406 0.656315 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.69388 7.25 5.5737 4.0041 5.5737 0C5.5737 -4.00406 3.69388 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-12">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.25068 7.25 -5.18989 4.0041 -5.18989 0C-5.18989 -4.00406 -2.25068 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.786879 7.25 0.31011 4.0041 0.31011 0C0.31011 -4.00406 0.786879 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.82444 7.25 5.81011 4.0041 5.81011 0C5.81011 -4.00406 3.82444 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-13">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.10556 7.25 -4.92712 4.0041 -4.92712 0C-4.92712 -4.00406 -2.10556 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.932002 7.25 0.57288 4.0041 0.57288 0C0.57288 -4.00406 0.932002 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.96956 7.25 6.07288 4.0041 6.07288 0C6.07288 -4.00406 3.96956 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-14">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.94397 7.25 -4.63454 4.0041 -4.63454 0C-4.63454 -4.00406 -1.94397 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.09359 7.25 0.865461 4.0041 0.865461 0C0.865461 -4.00406 1.09359 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.13115 7.25 6.36546 4.0041 6.36546 0C6.36546 -4.00406 4.13115 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-15">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.76366 7.25 -4.30805 4.0041 -4.30805 0C-4.30805 -4.00406 -1.76366 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.2739 7.25 1.19195 4.0041 1.19195 0C1.19195 -4.00406 1.2739 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.31146 7.25 6.69195 4.0041 6.69195 0C6.69195 -4.00406 4.31146 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-16">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.56189 7.25 -3.94272 4.0041 -3.94272 0C-3.94272 -4.00406 -1.56189 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.47567 7.25 1.55728 4.0041 1.55728 0C1.55728 -4.00406 1.47567 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.51323 7.25 7.05728 4.0041 7.05728 0C7.05728 -4.00406 4.51323 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-17">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.33538 7.25 -3.53259 4.0041 -3.53259 0C-3.53259 -4.00406 -1.33538 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.70218 7.25 1.96741 4.0041 1.96741 0C1.96741 -4.00406 1.70218 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.73974 7.25 7.46741 4.0041 7.46741 0C7.46741 -4.00406 4.73974 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-18">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.08018 7.25 -3.0705 4.0041 -3.0705 0C-3.0705 -4.00406 -1.08018 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.95738 7.25 2.4295 4.0041 2.4295 0C2.4295 -4.00406 1.95738 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.99494 7.25 7.9295 4.0041 7.9295 0C7.9295 -4.00406 4.99494 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-19">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.791521 7.25 -2.54784 4.0041 -2.54784 0C-2.54784 -4.00406 -0.791521 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.24604 7.25 2.95216 4.0041 2.95216 0C2.95216 -4.00406 2.24604 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.2836 7.25 8.45216 4.0041 8.45216 0C8.45216 -4.00406 5.2836 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-20">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.463861 7.25 -1.95456 4.0041 -1.95456 0C-1.95456 -4.00406 -0.463861 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.5737 7.25 3.54544 4.0041 3.54544 0C3.54544 -4.00406 2.5737 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-21">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.0909827 7.25 -1.2794 4.0041 -1.2794 0C-1.2794 -4.00406 -0.0909827 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.94658 7.25 4.2206 4.0041 4.2206 0C4.2206 -4.00406 2.94658 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-22">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.333275 7.25 -0.511213 4.0041 -0.511213 0C-0.511213 -4.00406 0.333275 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.37084 7.25 4.98879 4.0041 4.98879 0C4.98879 -4.00406 3.37084 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-23">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.22424 7.25 -5.14202 4.0041 -5.14202 0C-5.14202 -4.00406 -2.22424 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.813318 7.25 0.357983 4.0041 0.357983 0C0.357983 -4.00406 0.813318 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.85088 7.25 5.85798 4.0041 5.85798 0C5.85798 -4.00406 3.85088 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-24">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.68906 7.25 -4.17298 4.0041 -4.17298 0C-4.17298 -4.00406 -1.68906 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.3485 7.25 1.32702 4.0041 1.32702 0C1.32702 -4.00406 1.3485 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.38606 7.25 6.82702 4.0041 6.82702 0C6.82702 -4.00406 4.38606 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-25">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.10881 7.25 -3.12235 4.0041 -3.12235 0C-3.12235 -4.00406 -1.10881 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.92875 7.25 2.37765 4.0041 2.37765 0C2.37765 -4.00406 1.92875 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.9663 7.25 7.87764 4.0041 7.87764 0C7.87764 -4.00406 4.9663 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-26">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.505245 7.25 -2.02949 4.0041 -2.02949 0C-2.02949 -4.00406 -0.505245 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.53231 7.25 3.47051 4.0041 3.47051 0C3.47051 -4.00406 2.53231 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-27">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.0927757 7.25 -0.946677 4.0041 -0.946677 0C-0.946677 -4.00406 0.0927757 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.13034 7.25 4.55332 4.0041 4.55332 0C4.55332 -4.00406 3.13034 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-28">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.3782 7.25 -5.42078 4.0041 -5.42078 0C-5.42078 -4.00406 -2.3782 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.659364 7.25 0.0792235 4.0041 0.0792236 0C0.0792235 -4.00406 0.659364 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.69692 7.25 5.57922 4.0041 5.57922 0C5.57922 -4.00406 3.69692 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-29">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.85854 7.25 -4.47986 4.0041 -4.47986 0C-4.47986 -4.00406 -1.85854 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.17902 7.25 1.02014 4.0041 1.02014 0C1.02014 -4.00406 1.17902 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.21658 7.25 6.52014 4.0041 6.52014 0C6.52014 -4.00406 4.21658 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-30">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.39078 7.25 -3.63289 4.0041 -3.63289 0C-3.63289 -4.00406 -1.39078 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.64678 7.25 1.86711 4.0041 1.86711 0C1.86711 -4.00406 1.64678 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.68434 7.25 7.36711 4.0041 7.36711 0C7.36711 -4.00406 4.68434 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-31">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.973136 7.25 -2.87669 4.0041 -2.87669 0C-2.87669 -4.00406 -0.973136 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.06442 7.25 2.62331 4.0041 2.62331 0C2.62331 -4.00406 2.06442 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.10198 7.25 8.12331 4.0041 8.12331 0C8.12331 -4.00406 5.10198 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-32">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.600852 7.25 -2.2026 4.0041 -2.2026 0C-2.2026 -4.00406 -0.600852 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.43671 7.25 3.2974 4.0041 3.2974 0C3.2974 -4.00406 2.43671 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-33">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.268373 7.25 -1.6006 4.0041 -1.6006 0C-1.6006 -4.00406 -0.268373 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.76919 7.25 3.8994 4.0041 3.8994 0C3.8994 -4.00406 2.76919 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-34">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.0295971 7.25 -1.06107 4.0041 -1.06107 0C-1.06107 -4.00406 0.0295971 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.06716 7.25 4.43893 4.0041 4.43893 0C4.43893 -4.00406 3.06716 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-35">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.63182 7.25 -5.88 4.0041 -5.88 0C-5.88 -4.00406 -2.63182 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.297722 7.25 -0.575588 4.0041 -0.575588 0C-0.575588 -4.00406 0.297722 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.33528 7.25 4.92441 4.0041 4.92441 0C4.92441 -4.00406 3.33528 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-36">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.49758 7.25 -5.63694 4.0041 -5.63694 0C-5.63694 -4.00406 -2.49758 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.539981 7.25 -0.136938 4.0041 -0.136938 0C-0.136938 -4.00406 0.539981 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.57754 7.25 5.36306 4.0041 5.36306 0C5.36306 -4.00406 3.57754 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-37">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.27784 7.25 -5.23907 4.0041 -5.23907 0C-5.23907 -4.00406 -2.27784 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.759718 7.25 0.260931 4.0041 0.260931 0C0.260931 -4.00406 0.759718 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.79728 7.25 5.76093 4.0041 5.76093 0C5.76093 -4.00406 3.79728 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-38">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-2.07784 7.25 -4.87693 4.0041 -4.87693 0C-4.87693 -4.00406 -2.07784 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C0.959722 7.25 0.623072 4.0041 0.623072 0C0.623072 -4.00406 0.959722 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C3.99728 7.25 6.12307 4.0041 6.12307 0C6.12307 -4.00406 3.99728 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-39">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.89523 7.25 -4.54628 4.0041 -4.54628 0C-4.54628 -4.00406 -1.89523 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.14233 7.25 0.95372 4.0041 0.95372 0C0.95372 -4.00406 1.14233 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.17989 7.25 6.45372 4.0041 6.45372 0C6.45372 -4.00406 4.17989 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-40">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.72804 7.25 -4.24356 4.0041 -4.24356 0C-4.24356 -4.00406 -1.72804 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.30952 7.25 1.25644 4.0041 1.25644 0C1.25644 -4.00406 1.30952 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.34708 7.25 6.75644 4.0041 6.75644 0C6.75644 -4.00406 4.34708 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-41">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.57462 7.25 -3.96577 4.0041 -3.96577 0C-3.96577 -4.00406 -1.57462 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.46294 7.25 1.53423 4.0041 1.53423 0C1.53423 -4.00406 1.46294 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.5005 7.25 7.03423 4.0041 7.03423 0C7.03423 -4.00406 4.5005 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-42">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.43355 7.25 -3.71034 4.0041 -3.71034 0C-3.71034 -4.00406 -1.43355 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.60401 7.25 1.78966 4.0041 1.78966 0C1.78966 -4.00406 1.60401 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.64157 7.25 7.28966 4.0041 7.28966 0C7.28966 -4.00406 4.64157 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-43">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.30362 7.25 -3.47508 4.0041 -3.47508 0C-3.47508 -4.00406 -1.30362 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.73394 7.25 2.02492 4.0041 2.02492 0C2.02492 -4.00406 1.73394 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.7715 7.25 7.52492 4.0041 7.52492 0C7.52492 -4.00406 4.7715 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-44">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.18379 7.25 -3.25812 4.0041 -3.25812 0C-3.25812 -4.00406 -1.18379 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.85377 7.25 2.24188 4.0041 2.24188 0C2.24188 -4.00406 1.85377 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C4.89133 7.25 7.74188 4.0041 7.74188 0C7.74188 -4.00406 4.89133 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-45">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-1.07316 7.25 -3.0578 4.0041 -3.0578 0C-3.0578 -4.00406 -1.07316 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C1.9644 7.25 2.4422 4.0041 2.4422 0C2.4422 -4.00406 1.9644 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.00196 7.25 7.9422 4.0041 7.9422 0C7.9422 -4.00406 5.00196 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-46">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.970946 7.25 -2.87272 4.0041 -2.87272 0C-2.87272 -4.00406 -0.970946 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.06661 7.25 2.62728 4.0041 2.62728 0C2.62728 -4.00406 2.06661 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.10417 7.25 8.12728 4.0041 8.12728 0C8.12728 -4.00406 5.10417 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-47">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.876451 7.25 -2.70162 4.0041 -2.70162 0C-2.70162 -4.00406 -0.876451 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.16111 7.25 2.79838 4.0041 2.79838 0C2.79838 -4.00406 2.16111 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.19867 7.25 8.29838 4.0041 8.29838 0C8.29838 -4.00406 5.19867 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-48">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.789072 7.25 -2.54341 4.0041 -2.54341 0C-2.54341 -4.00406 -0.789072 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.24849 7.25 2.95659 4.0041 2.95659 0C2.95659 -4.00406 2.24849 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.28605 7.25 8.45659 4.0041 8.45659 0C8.45659 -4.00406 5.28605 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-49">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.708275 7.25 -2.39711 4.0041 -2.39711 0C-2.39711 -4.00406 -0.708275 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.32929 7.25 3.10289 4.0041 3.10289 0C3.10289 -4.00406 2.32929 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.36684 7.25 8.60289 4.0041 8.60289 0C8.60289 -4.00406 5.36684 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-50">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.63358 7.25 -2.26186 4.0041 -2.26186 0C-2.26186 -4.00406 -0.63358 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.40398 7.25 3.23814 4.0041 3.23814 0C3.23814 -4.00406 2.40398 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-51">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.564563 7.25 -2.1369 4.0041 -2.1369 0C-2.1369 -4.00406 -0.564563 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.473 7.25 3.3631 4.0041 3.3631 0C3.3631 -4.00406 2.473 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-52">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.500842 7.25 -2.02152 4.0041 -2.02152 0C-2.02152 -4.00406 -0.500842 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.53672 7.25 3.47848 4.0041 3.47848 0C3.47848 -4.00406 2.53672 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-53">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.442073 7.25 -1.91511 4.0041 -1.91511 0C-1.91511 -4.00406 -0.442073 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.59549 7.25 3.58489 4.0041 3.58489 0C3.58489 -4.00406 2.59549 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-54">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.387945 7.25 -1.8171 4.0041 -1.8171 0C-1.8171 -4.00406 -0.387945 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.64962 7.25 3.6829 4.0041 3.6829 0C3.6829 -4.00406 2.64962 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-55">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.338178 7.25 -1.72699 4.0041 -1.72699 0C-1.72699 -4.00406 -0.338178 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.69938 7.25 3.77301 4.0041 3.77301 0C3.77301 -4.00406 2.69938 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-56">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.292516 7.25 -1.64431 4.0041 -1.64431 0C-1.64431 -4.00406 -0.292516 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.74504 7.25 3.85569 4.0041 3.85569 0C3.85569 -4.00406 2.74504 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-57">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.250725 7.25 -1.56864 4.0041 -1.56864 0C-1.56864 -4.00406 -0.250725 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.78683 7.25 3.93136 4.0041 3.93136 0C3.93136 -4.00406 2.78683 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-58">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.212594 7.25 -1.4996 4.0041 -1.4996 0C-1.4996 -4.00406 -0.212594 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.82497 7.25 4.0004 4.0041 4.0004 0C4.0004 -4.00406 2.82497 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+    <symbol id="frame-59">
+    <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(9.25 9.25)" d="M-0.25 -7.5C3.75406 -7.5 7 -4.25406 7 -0.25C7 3.75406 3.75406 7 -0.25 7C-4.25406 7 -7.5 3.75406 -7.5 -0.25C-7.5 -4.25406 -4.25406 -7.5 -0.25 -7.5Z"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(1.75 9)" d="M0 0L14.5 0"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C-0.177926 7.25 -1.43683 4.0041 -1.43683 0C-1.43683 -4.00406 -0.177926 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C2.85963 7.25 4.06317 4.0041 4.06317 0C4.06317 -4.00406 2.85963 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.3763 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.3763 -7.25 1.375 -7.25"></path>
+  <path fill="none" stroke="white" stroke-width="1.5" stroke-miterlimit="4" transform="translate(7.63 9)" d="M1.375 7.25C5.37629 7.25 8.62 4.0041 8.62 0C8.62 -4.00406 5.37629 -7.25 1.375 -7.25"></path>
+    </symbol>
+  </defs>
+</svg>
