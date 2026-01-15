@@ -1,8 +1,6 @@
 import { Chat } from '@/components/ui/Chat';
 import { Canvas } from '@/components/ui/Canvas';
 import { Footer } from '@/components/ui/Footer';
-import { RamsClock } from '@/components/ui/RamsClock';
-
 export default function Home() {
   return (
     <main className="relative h-screen w-screen overflow-hidden text-white selection:bg-white/20">

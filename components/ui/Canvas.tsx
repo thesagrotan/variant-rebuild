@@ -64,7 +64,7 @@ export const Canvas = () => {
                         rotation={frame.rotation}
                         scale={scale}
                     >
-                        <FrameContent componentType={frame.component} />
+                        <FrameContent type={frame.type} src={frame.src} />
                     </Frame>
                 );
             })}

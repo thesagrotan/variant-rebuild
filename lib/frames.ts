@@ -6,7 +6,8 @@ export interface FrameConfig {
     width: number;
     height: number;
     rotation: number;
-    component: 'VariantLogo' | 'ProductivityApp' | 'RamsClock' | 'RadarChart' | 'PoeticWeather' | 'MediaPlayer' | 'PredictionMarket' | 'NavBar' | 'StoriesWidget' | 'ScribblePad' | 'VariantManifesto';
+    type: 'image' | 'video';
+    src: string;
 }
 
 export const FRAMES: FrameConfig[] = [
@@ -17,7 +18,8 @@ export const FRAMES: FrameConfig[] = [
         width: 254,
         height: 278,
         rotation: -3,
-        component: 'VariantLogo'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'productivity-app',
@@ -26,7 +28,8 @@ export const FRAMES: FrameConfig[] = [
         width: 189,
         height: 352,
         rotation: 6,
-        component: 'ProductivityApp'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'rams-clock',
@@ -35,7 +38,8 @@ export const FRAMES: FrameConfig[] = [
         width: 156,
         height: 179,
         rotation: 4,
-        component: 'RamsClock'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'radar-chart',
@@ -44,7 +48,8 @@ export const FRAMES: FrameConfig[] = [
         width: 191,
         height: 272,
         rotation: -2,
-        component: 'RadarChart'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'poetic-weather',
@@ -53,7 +58,8 @@ export const FRAMES: FrameConfig[] = [
         width: 219,
         height: 279,
         rotation: -7,
-        component: 'PoeticWeather'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'media-player',
@@ -62,7 +68,8 @@ export const FRAMES: FrameConfig[] = [
         width: 264,
         height: 188,
         rotation: 9,
-        component: 'MediaPlayer'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'prediction-market',
@@ -71,7 +78,8 @@ export const FRAMES: FrameConfig[] = [
         width: 228,
         height: 437,
         rotation: 4,
-        component: 'PredictionMarket'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'nav-bar',
@@ -80,7 +88,8 @@ export const FRAMES: FrameConfig[] = [
         width: 264,
         height: 96,
         rotation: -6,
-        component: 'NavBar'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'stories-widget',
@@ -89,7 +98,8 @@ export const FRAMES: FrameConfig[] = [
         width: 205,
         height: 268,
         rotation: -4,
-        component: 'StoriesWidget'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'scribble-pad',
@@ -98,7 +108,8 @@ export const FRAMES: FrameConfig[] = [
         width: 243,
         height: 285,
         rotation: -5,
-        component: 'ScribblePad'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     },
     {
         id: 'variant-manifesto',
@@ -107,6 +118,7 @@ export const FRAMES: FrameConfig[] = [
         width: 221,
         height: 282,
         rotation: -15,
-        component: 'VariantManifesto'
+        type: 'image',
+        src: '/assets/dummy-frame.png'
     }
 ];

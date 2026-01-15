@@ -33,12 +33,15 @@ export const Chat = () => {
     return (
         <div className={cn("Chat", styles.containers.chat.wrapper)}>
             {/* Manifesto Text */}
-            <div className="Chat-manifesto flex flex-col gap-4 text-white">
+            <div className="Chat-manifesto flex flex-col gap-4 text-white mx-auto">
+
                 <p className="text-[20px] font-medium leading-[1.3] tracking-tight">
-                    Creativity doesn’t follow a straight line. It’s messy, iterative, and non-obvious.
+                    From brief to MVP
                 </p>
                 <p className="text-[14px] text-white/50 leading-[1.5] max-w-[340px]">
-                    We’re building tools to help you navigate the chaos and find your own path.
+                    who transforms complex systems into intuitive experiences while enabling brands to tell their story effectively.                </p>
+                <p className="text-[14px] text-white/50 leading-[1.5] max-w-[340px]">
+                    With over 15 years of experience for the last years helping startups on b2b and b2c solutions  in the areas fo mobility, fintech, DeFi, and digital health.
                 </p>
             </div>
 
