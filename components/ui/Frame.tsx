@@ -75,10 +75,12 @@ export const Frame = ({
         return dist * 0.8 * progress;
     });
 
+    const opacity = useTransform(scrollY, [0, 600], [1, 0]);
+
     return (
         <motion.div
             className="absolute top-0 left-0 pointer-events-none will-change-transform"
-            style={{ x: xOffset, y: yOffset, zIndex: 0 }}
+            style={{ x: xOffset, y: yOffset, opacity, zIndex: 0 }}
         >
             <motion.div
                 drag

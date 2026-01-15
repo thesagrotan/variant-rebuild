@@ -21,50 +21,31 @@ export const FRAMES: FrameConfig[] = [
         type: 'image',
         src: '/assets/dummy-frame.png'
     },
-    {
-        id: 'productivity-app',
-        tag: 'productivity app',
-        initialX: { relX: -544, relY: -35, w: 189, h: 352 },
-        width: 189,
-        height: 352,
-        rotation: 6,
-        type: 'image',
-        src: '/assets/dummy-frame.png'
-    },
+    // {
+    //     id: 'productivity-app',
+    //     tag: 'productivity app',
+    //     initialX: { relX: -544, relY: -35, w: 189, h: 352 },
+    //     width: 189,
+    //     height: 352,
+    //     rotation: 6,
+    //     type: 'image',
+    //     src: '/assets/dummy-frame.png'
+    // },
     {
         id: 'rams-clock',
         tag: 'rams clock',
-        initialX: { relX: -379, relY: -158, w: 156, h: 179 },
+        initialX: { relX: -280, relY: -158, w: 156, h: 179 },
         width: 156,
         height: 179,
         rotation: 4,
         type: 'image',
         src: '/assets/dummy-frame.png'
     },
-    {
-        id: 'radar-chart',
-        tag: 'radar chart',
-        initialX: { relX: -430, relY: -14, w: 191, h: 272 },
-        width: 191,
-        height: 272,
-        rotation: -2,
-        type: 'image',
-        src: '/assets/dummy-frame.png'
-    },
-    {
-        id: 'poetic-weather',
-        tag: 'poetic weather',
-        initialX: { relX: -202, relY: -53, w: 219, h: 279 },
-        width: 219,
-        height: 279,
-        rotation: -7,
-        type: 'image',
-        src: '/assets/dummy-frame.png'
-    },
+
     {
         id: 'media-player',
         tag: 'media player',
-        initialX: { relX: -249, relY: 77, w: 264, h: 188 },
+        initialX: { relX: -100, relY: 77, w: 264, h: 188 },
         width: 264,
         height: 188,
         rotation: 9,
@@ -92,19 +73,9 @@ export const FRAMES: FrameConfig[] = [
         src: '/assets/dummy-frame.png'
     },
     {
-        id: 'stories-widget',
-        tag: 'stories widget',
-        initialX: { relX: 342, relY: 64, w: 205, h: 268 },
-        width: 205,
-        height: 268,
-        rotation: -4,
-        type: 'image',
-        src: '/assets/dummy-frame.png'
-    },
-    {
         id: 'scribble-pad',
         tag: 'scribble pad',
-        initialX: { relX: 542, relY: -107, w: 243, h: 285 },
+        initialX: { relX: 542, relY: -207, w: 243, h: 285 },
         width: 243,
         height: 285,
         rotation: -5,
