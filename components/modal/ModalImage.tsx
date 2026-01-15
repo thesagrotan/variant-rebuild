@@ -29,7 +29,7 @@ export const ModalImage = ({
         <motion.div
             layoutId={`${projectId}-img-${index + 1}`}
             transition={{ layout: layoutTransition }}
-            className={`bg-stone-900 relative rounded-lg overflow-hidden will-change-transform ${isSingleColumn ? 'h-auto' : 'h-[320px] md:h-[420px] lg:h-[520px]'
+            className={`bg-[var(--glass-bg)] relative rounded-lg overflow-hidden will-change-transform ${isSingleColumn ? 'h-auto' : 'h-[320px] md:h-[420px] lg:h-[520px]'
                 }`}
         >
             {isGrid ? (
@@ -56,7 +56,7 @@ export const ModalImage = ({
             )}
             <div
                 aria-hidden="true"
-                className="absolute border border-white/10 inset-0 pointer-events-none rounded-lg shadow-[41px_57px_20px_0px_rgba(0,0,0,0),26px_37px_18px_0px_rgba(0,0,0,0.01)]"
+                className="absolute border border-[var(--border-subtle)] inset-0 pointer-events-none rounded-lg shadow-[41px_57px_20px_0px_rgba(0,0,0,0),26px_37px_18px_0px_rgba(0,0,0,0.01)]"
             />
         </motion.div>
     );

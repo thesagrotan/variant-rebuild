@@ -121,17 +121,17 @@ export const Frame = ({
                     >
                         {/* Corner Decorations */}
                         <div className="absolute top-2 left-2 flex gap-[3px] items-center pointer-events-none opacity-40 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-white" />
-                            <div className="w-[3px] h-[3px] rounded-full bg-white/40" />
+                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
+                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-muted)]" />
                         </div>
                         <div className="absolute top-2 right-2 pointer-events-none opacity-20 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-white" />
+                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
                         </div>
                         <div className="absolute bottom-2 left-2 pointer-events-none opacity-20 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-white" />
+                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
                         </div>
                         <div className="absolute bottom-2 right-2 pointer-events-none opacity-20 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-white" />
+                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
                         </div>
 
                         {children}

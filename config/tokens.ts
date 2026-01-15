@@ -144,11 +144,11 @@ export const CLASSES = {
     } as const,
 
     // Border and shadow
-    cardBorder: 'border border-[#323e45] border-solid rounded-[8px]',
+    cardBorder: 'border border-[var(--border-subtle)] border-solid rounded-[8px]',
     cardShadow: SHADOWS.card,
 
     // Background colors
-    pageBg: 'bg-[#edefeb]',
+    pageBg: 'bg-[var(--bg-solid)]',
     buttonBg: 'bg-stone-800',
 
     // Sizing

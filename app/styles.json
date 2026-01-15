@@ -1,23 +1,23 @@
 {
     "globals": {
-        "background": "rgb(17, 17, 17)",
-        "text": "text-[rgba(255,255,255,0.9)]"
+        "background": "var(--bg-solid)",
+        "text": "var(--text-primary)"
     },
     "containers": {
         "frame": {
-            "tag": "inline-flex items-center px-[10px] h-7 rounded-[9px] bg-black/50 backdrop-blur-[24px] text-white/50 hover:text-white/80 hover:bg-white/5 transition-all duration-200 cursor-grab active:cursor-grabbing border border-white/5 w-fit",
-            "body": "relative rounded-[12px] overflow-hidden border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] bg-black/20"
+            "tag": "inline-flex items-center px-[10px] h-7 rounded-[9px] bg-[var(--glass-bg)] backdrop-blur-[24px] text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--glass-hover)] transition-all duration-200 cursor-grab active:cursor-grabbing border border-[var(--border-subtle)] w-fit",
+            "body": "relative rounded-[12px] overflow-hidden border border-[var(--border-subtle)] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] bg-[var(--glass-bg)]"
         },
         "navBar": {
             "root": "fixed top-6 left-1/2 -translate-x-1/2 z-50",
-            "nav": "relative flex items-center gap-1 p-1 rounded-[16px] backdrop-blur-[32px] bg-black/50 border border-white/10",
+            "nav": "relative flex items-center gap-1 p-1 rounded-[16px] backdrop-blur-[32px] bg-[var(--glass-bg)] border border-[var(--border-subtle)]",
             "item": "relative w-16 h-12 flex items-center justify-center rounded-[12px] transition-all duration-200",
-            "itemActive": "text-white",
-            "itemInactive": "text-white/50 hover:text-white/100 hover:bg-white/5"
+            "itemActive": "text-[var(--text-primary)]",
+            "itemInactive": "text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--glass-hover)]"
         },
         "chat": {
             "wrapper": "flex flex-col gap-8 w-[400px] max-w-[var(--max-page-content-width)] relative z-10 pb-4",
-            "inputForm": "relative flex items-center bg-white/[0.03] border border-white/10 rounded-[14px] transition-all duration-500 ease-premium overflow-hidden"
+            "inputForm": "relative flex items-center bg-[var(--glass-bg)] border border-[var(--border-subtle)] rounded-[14px] transition-all duration-500 ease-premium overflow-hidden"
         }
     }
 }

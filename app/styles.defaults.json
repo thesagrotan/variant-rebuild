@@ -5,8 +5,8 @@
     },
     "containers": {
         "frame": {
-            "tag": "inline-flex items-center px-[10px] h-7 rounded-[9px] bg-black/50 backdrop-blur-[24px] text-white/50 hover:text-white/80 hover:bg-white/5 transition-all duration-200 cursor-grab active:cursor-grabbing border border-white/5 w-fit",
-            "body": "relative rounded-[12px] overflow-hidden border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] bg-black/20"
+            "tag": "inline-flex items-center px-[10px] h-7 rounded-[9px] bg-[var(--frame-tag-bg)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:brightness-110 transition-all duration-200 cursor-grab active:cursor-grabbing border border-[var(--frame-border)] w-fit",
+            "body": "relative rounded-[12px] overflow-hidden border border-[var(--frame-border)] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] bg-[var(--frame-bg)]"
         },
         "navBar": {
             "root": "fixed top-6 left-1/2 -translate-x-1/2 z-50",

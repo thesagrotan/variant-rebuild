@@ -63,7 +63,7 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
                 exit={{ opacity: 0 }}
                 transition={{ duration: backdropFadeDuration }}
 
-                className="fixed inset-0 bg-black/opacity z-[100] backdrop-blur-sm"
+                className="fixed inset-0 z-[100] backdrop-blur-sm"
                 style={{ backgroundColor: `rgba(0, 0, 0, ${backdropOpacity})` }}
                 onClick={onClose}
             />
@@ -75,7 +75,7 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
                 className="fixed inset-0 z-[101] overflow-y-auto overscroll-contain"
                 style={{ transformOrigin: 'center center', WebkitOverflowScrolling: 'touch', willChange: 'transform' }}
             >
-                <div className="bg-[#0a0a0a] min-h-full w-full">
+                <div className="bg-[var(--bg-solid)] min-h-full w-full">
                     <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16 py-8 md:py-16">
                         {/* Back button and Chat button */}
                         <div className="flex justify-between items-center mb-16">
@@ -83,10 +83,10 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
                                 onClick={onClose}
                                 className="p-2 rounded-full cursor-pointer"
                                 initial={{ backgroundColor: 'transparent' }}
-                                whileHover={{ scale: closeButtonScale, backgroundColor: '#ffffff20' }}
+                                whileHover={{ scale: closeButtonScale, backgroundColor: 'var(--glass-hover)' }}
                                 transition={{ duration: iconButtonDuration }}
                             >
-                                <ArrowLeft className="w-6 h-6 text-white" />
+                                <ArrowLeft className="w-6 h-6 text-text-primary" />
                             </motion.button>
                         </div>
 
@@ -94,13 +94,13 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
                         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start justify-center mb-32">
                             <div className="flex flex-col gap-6 w-full lg:w-45">
                                 <div className="flex flex-col gap-2">
-                                    <p className="text-[20px] font-medium leading-[1.3] text-white">{title}</p>
-                                    <p className="text-[14px] leading-[1.5] text-white/50">{year}</p>
+                                    <p className="text-[20px] font-medium leading-[1.3] text-text-primary">{title}</p>
+                                    <p className="text-[14px] leading-[1.5] text-text-muted">{year}</p>
                                 </div>
 
                                 <div className="flex flex-col">
                                     {categories.map((category, index) => (
-                                        <p key={index} className="text-[14px] leading-[1.5] text-white/50">
+                                        <p key={index} className="text-[14px] leading-[1.5] text-text-muted">
                                             {category}
                                         </p>
                                     ))}
@@ -109,7 +109,7 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
 
                             <div className="flex flex-col gap-8 w-full lg:max-w-[720px]">
                                 {paragraphs.map((paragraph, index) => (
-                                    <p key={index} className="text-[14px] leading-[1.5] text-white/90">
+                                    <p key={index} className="text-[14px] leading-[1.5] text-text-primary opacity-90">
                                         {paragraph}
                                     </p>
                                 ))}

@@ -46,7 +46,7 @@ export const MainContent = ({ onProjectClick }: MainContentProps) => {
                 }
             `}} />
             {/* Scrollable Content Area */}
-            <div ref={scrollRef} onScroll={handleScroll} className="MainContent-scrollArea h-screen flex flex-col gap-4 pt-[80vh] justify-start overflow-scroll scrollbar-hide text-white mx-auto pb-32 w-full">
+            <div ref={scrollRef} onScroll={handleScroll} className="MainContent-scrollArea h-screen flex flex-col gap-4 pt-[80vh] justify-start overflow-scroll scrollbar-hide mx-auto pb-32 w-full">
                 <HomeContent onProjectClick={onProjectClick} />
             </div>
 

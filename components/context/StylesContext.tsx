@@ -9,9 +9,12 @@ type StylesData = any;
 
 interface StylesContextType {
     styles: StylesData;
+    theme: 'dark' | 'light';
     updateStyles: (newStyles: StylesData) => void;
     patchStyles: (partialStyles: StylesData) => void;
     resetStyles: () => void;
+    toggleTheme: () => void;
+    setTheme: (theme: 'dark' | 'light') => void;
 }
 
 const StylesContext = createContext<StylesContextType | undefined>(undefined);
@@ -24,6 +27,22 @@ export const StylesProvider = ({
     initialStyles: StylesData;
 }) => {
     const [styles, setStyles] = useState<StylesData>(initialStyles);
+    const [theme, setThemeState] = useState<'dark' | 'light'>(() => {
+        if (typeof window !== 'undefined') {
+            const saved = localStorage.getItem('theme');
+            return (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        }
+        return 'dark';
+    });
+
+    const setTheme = useCallback((newTheme: 'dark' | 'light') => {
+        setThemeState(newTheme);
+        localStorage.setItem('theme', newTheme);
+    }, []);
+
+    const toggleTheme = useCallback(() => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    }, [theme, setTheme]);
 
     const resetStyles = useCallback(() => {
         setStyles(initialStyles);
@@ -35,10 +54,13 @@ export const StylesProvider = ({
 
     const contextValue = useMemo(() => ({
         styles,
+        theme,
         updateStyles: setStyles,
         patchStyles,
-        resetStyles
-    }), [styles, patchStyles, resetStyles]);
+        resetStyles,
+        toggleTheme,
+        setTheme
+    }), [styles, theme, patchStyles, resetStyles, toggleTheme, setTheme]);
 
     return (
         <StylesContext.Provider value={contextValue}>

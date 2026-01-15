@@ -3,12 +3,17 @@ import { useControls, folder } from 'leva';
 import { useStyles } from '@/components/context/StylesContext';
 
 export const useGlobalControls = () => {
-    const { styles, patchStyles } = useStyles();
+    const { styles, patchStyles, theme, setTheme } = useStyles();
 
     const globals = styles?.globals || { background: '', text: '' };
 
     const [values] = useControls(() => ({
         Globals: folder({
+            Theme: {
+                value: theme,
+                options: ['dark', 'light'],
+                onChange: (v) => setTheme(v as 'dark' | 'light'),
+            },
             // Prepend space to force Leva to infer String input instead of Color input
             bgValue: { label: 'Background', value: ' ' + globals.background, rows: true },
             text: { value: globals.text },
@@ -17,7 +22,7 @@ export const useGlobalControls = () => {
             useGradient: { value: true, label: 'Enable Gradient' },
             gradientType: { value: 'radial', options: ['linear', 'radial'], label: 'Type' },
             gradientStart: { value: 'rgba(255, 87, 34, 0.12)', label: 'Start Color' },
-            gradientEnd: { value: 'rgb(17, 17, 17)', label: 'End Color' },
+            gradientEnd: { value: 'var(--bg-solid)', label: 'End Color' },
             gradientAngle: { value: 90, min: 0, max: 360, label: 'Angle (Linear)', render: (get) => get('Gradient Helper.gradientType') === 'linear' },
             gradientPosition: { value: '50% 0%', label: 'Position (Radial)', render: (get) => get('Gradient Helper.gradientType') === 'radial' },
         }, { collapsed: false }),

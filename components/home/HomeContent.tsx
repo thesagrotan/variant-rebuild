@@ -7,6 +7,8 @@ import { useProjectData } from '@/hooks/useProjectData';
 import PortfolioProjectCard from '@/components/project/PortfolioProjectCard';
 import ProjectLink from '@/components/project/ProjectLink';
 import { useAnimationControls } from '@/components/ui/AnimationControls';
+import Image from 'next/image';
+import { useStyles } from '@/components/context/StylesContext';
 import { CLASSES } from '@/config/tokens';
 
 interface HomeContentProps {
@@ -16,6 +18,7 @@ interface HomeContentProps {
 export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
     const siteContent = useSiteContent();
     const { projects } = useProjectData();
+    const { theme } = useStyles();
     const {
         cardHoverScale,
         cardHoverDuration,
@@ -27,14 +30,23 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
 
     return (
         <>
-            <p className="text-xl font-medium leading-[1.3] tracking-tight">
-                From brief to MVP
-            </p>
-            <div className="flex flex-col gap-8 text-sm text-white/50 leading-[1.5] max-w-[340px]">
+            <div className="mb-8">
+                <Image
+                    src={theme === 'light' ? "/assets/logo-light.svg" : "/assets/logo.svg"}
+                    alt="Logo"
+                    width={48}
+                    height={48}
+                    className="mb-6"
+                />
+                <p className="text-xl font-medium leading-[1.3] tracking-tight">
+                    From brief to MVP
+                </p>
+            </div>
+            <div className="flex flex-col gap-8 text-sm text-text-muted leading-[1.5] max-w-[340px]">
                 {[siteContent.hero.intro, siteContent.hero.experience].map((text, idx) => (
                     <p key={idx} className={`${idx === 1 ? 'whitespace-pre-wrap' : ''}`}>
                         {parseBold(text).map(({ text: t, bold, key }) => (
-                            <span key={key} className={bold ? 'text-white font-medium' : ''}>{t}</span>
+                            <span key={key} className={bold ? 'text-text-primary font-medium' : ''}>{t}</span>
                         ))}
                     </p>
                 ))}
@@ -42,7 +54,7 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
 
             {/* Selected Work */}
             <div className="flex flex-col gap-10 w-full mt-24">
-                <h2 className="text-xl font-medium text-white">{siteContent.selectedWork}</h2>
+                <h2 className="text-xl font-medium text-text-primary">{siteContent.selectedWork}</h2>
                 <div className={`flex flex-col ${CLASSES.cardGap}`}>
                     {projects.map((project) => (
                         <PortfolioProjectCard
@@ -60,7 +72,7 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
 
             {/* Here to help you with */}
             <div className={`mt-20 flex flex-col gap-8 w-full`}>
-                <h2 className="text-xl font-medium text-white">{siteContent.helpWith.heading}</h2>
+                <h2 className="text-xl font-medium text-text-primary">{siteContent.helpWith.heading}</h2>
                 <div className="flex flex-wrap gap-x-8 gap-y-4">
                     {siteContent.helpWith.links.map((column, idx) => (
                         <div key={idx} className={`flex flex-col ${CLASSES.linkColumn}`}>

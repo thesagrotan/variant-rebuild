@@ -48,7 +48,7 @@ export const Canvas = () => {
             />
 
             {/* Blur/Grain Layer */}
-            <div className="Canvas-overlay absolute inset-0 bg-black/10 backdrop-blur-[0.5px] pointer-events-none" />
+            <div className="Canvas-overlay absolute inset-0 bg-[var(--text-primary)]/5 backdrop-blur-[0.5px] pointer-events-none" />
 
             {FRAMES.map((frame) => {
                 const { x, y } = getPos(frame.initialX.relX, frame.initialX.relY, frame.initialX.w, frame.initialX.h);
