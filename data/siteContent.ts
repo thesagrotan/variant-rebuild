@@ -4,6 +4,7 @@ export interface SiteContent {
         experience: string;
         cta: string;
         email: string;
+        lead: string;
     };
     selectedWork: string;
     helpWith: {
@@ -17,7 +18,8 @@ export const siteContent: SiteContent = {
         intro: "I'm Daniel Campagne, **a product designer** who transforms complex systems into intuitive experiences while helping brands tell their stories effectively.",
         experience: "**With over 15 years of experience** for the last years helping startups on b2b and b2c solutions  in the areas fo mobility, fintech, DeFi, and digital health.",
         cta: "Get in touch",
-        email: "dcampagne@gmail.com"
+        email: "dcampagne@gmail.com",
+        lead: "Transforming **complex ideas** into **seamless digital products**."
     },
     selectedWork: "Selected Work",
     helpWith: {

@@ -34,15 +34,19 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
                 <Image
                     src={theme === 'light' ? "/assets/logo-light.svg" : "/assets/logo.svg"}
                     alt="Logo"
-                    width={48}
-                    height={48}
-                    className="mb-6"
+                    width={64}
+                    height={64}
+                    className="mb-12"
                 />
-                <p className="text-xl font-medium leading-[1.3] tracking-tight">
-                    From brief to MVP
+                <p className="text-4xl font-medium leading-[1.3] tracking-tight">
+                    {parseBold(siteContent.hero.lead).map(({ text, bold, key }) => (
+                        <span key={key} className={bold ? 'text-text-secondary opacity-80' : 'text-text-primary'}>
+                            {text}
+                        </span>
+                    ))}
                 </p>
             </div>
-            <div className="flex flex-col gap-8 text-sm text-text-muted leading-[1.5] max-w-[340px]">
+            <div className="flex flex-col gap-8 text-2xl text-text-muted leading-[1.5] max-w-[340px]">
                 {[siteContent.hero.intro, siteContent.hero.experience].map((text, idx) => (
                     <p key={idx} className={`${idx === 1 ? 'whitespace-pre-wrap' : ''}`}>
                         {parseBold(text).map(({ text: t, bold, key }) => (

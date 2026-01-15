@@ -99,7 +99,7 @@ export const Frame = ({
                 }}
                 transition={{
                     duration: 0.8,
-                    ease: [0.19, 1, 0.22, 1]
+                    ease: [0, 0, 0.2, 1]
                 }}
                 className={cn("Frame absolute pointer-events-auto select-none", className)}
                 style={{ x: baseX, y: baseY }}
