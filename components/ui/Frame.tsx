@@ -1,8 +1,8 @@
-import { useScrollContext } from '@/components/ScrollContext';
+import { useScrollContext } from '@/components/context/ScrollContext';
 import { motion, useTransform, useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { useStyles } from '@/components/StylesContext';
+import { useStyles } from '@/components/context/StylesContext';
 
 interface FrameProps {
     tag?: string;
@@ -105,7 +105,7 @@ export const Frame = ({
                 <div className="Frame-animationWrapper flex flex-col gap-[6px]">
                     {tag && (
                         <div className={cn("Frame-tag", styles.containers.frame.tag)}>
-                            <span className="text-[12px] font-medium tracking-tight h-full flex items-center">{tag}</span>
+                            <span className="text-xs font-medium tracking-tight h-full flex items-center">{tag}</span>
                         </div>
                     )}
                     <div

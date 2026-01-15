@@ -1,7 +1,7 @@
-import type { Project } from '../data/projects';
+import type { Project } from '../../data/projects';
 import ProjectImageStack from './ProjectImageStack';
-import { HeroIcon } from './HeroIcon';
-import { SPACING, CLASSES } from '../config/tokens';
+import { HeroIcon } from '../ui/HeroIcon';
+import { SPACING, CLASSES } from '../../config/tokens';
 
 interface AnimationConfig {
     hover: { scale: number; duration: number };

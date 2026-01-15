@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./styles.json";
-import { StylesProvider } from "@/components/StylesContext";
-import { StyleTweaker } from "@/components/StyleTweaker";
-import { GlobalStyler } from "@/components/GlobalStyler";
-import { BackgroundLayer } from "@/components/BackgroundLayer";
+import { StylesProvider } from "@/components/context/StylesContext";
+import { StyleTweaker } from "@/components/style/StyleTweaker";
+import { GlobalStyler } from "@/components/style/GlobalStyler";
+import { BackgroundLayer } from "@/components/ui/BackgroundLayer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Variant.ai Reconstruction",
-  description: "A high-fidelity reconstruction of Variant.ai",
+  title: "Portfolio Reconstruction",
+  description: "A high-fidelity reconstruction of Portfolio",
 };
 
 export default function RootLayout({

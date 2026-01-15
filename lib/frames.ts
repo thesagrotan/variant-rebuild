@@ -12,8 +12,8 @@ export interface FrameConfig {
 
 export const FRAMES: FrameConfig[] = [
     {
-        id: 'variant-logo',
-        tag: 'variant-logo',
+        id: 'portfolio-logo',
+        tag: 'portfolio-logo',
         initialX: { relX: -7, relY: 13, w: 254, h: 278 },
         width: 254,
         height: 278,
@@ -112,8 +112,8 @@ export const FRAMES: FrameConfig[] = [
         src: '/assets/dummy-frame.png'
     },
     {
-        id: 'variant-manifesto',
-        tag: 'variant manifesto',
+        id: 'portfolio-manifesto',
+        tag: 'portfolio manifesto',
         initialX: { relX: 497, relY: 110, w: 221, h: 282 },
         width: 221,
         height: 282,

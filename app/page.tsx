@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import { Leva } from 'leva';
 import { LayoutGroup, AnimatePresence } from 'framer-motion';
-import { Chat } from '@/components/ui/Chat';
+import { MainContent } from '@/components/home/MainContent';
 import { Canvas } from '@/components/ui/Canvas';
 import { Footer } from '@/components/ui/Footer';
-import { ScrollProvider } from '@/components/ScrollContext';
-import ProjectModal from '@/components/ProjectModal';
+import { ScrollProvider } from '@/components/context/ScrollContext';
+import ProjectModal from '@/components/modal/ProjectModal';
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="fixed bottom-0 left-0 w-full h-full z-20 flex flex-col items-center justify-end pointer-events-none">
             {/* Chat container needs pointer-events-auto for children */}
             <div className="w-full max-w-[424px] pointer-events-auto pb-8">
-              <Chat onProjectClick={handleProjectClick} />
+              <MainContent onProjectClick={handleProjectClick} />
             </div>
           </div>
         </ScrollProvider>

@@ -1,51 +1,19 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { useAnimationControls } from './AnimationControls';
-import { getProjectById } from '../data/projects';
-import { getModalVariants } from '../animation/modalVariants';
-import { buildImgStyle } from '../lib/imageStyle';
-import type { ProjectImage } from '../data/projects';
+import { useAnimationControls } from '../ui/AnimationControls';
+import { useProjectData } from '@/hooks/useProjectData';
+import { getModalVariants } from '../../animation/modalVariants';
+import { ModalImage } from './ModalImage';
+import { useScrollLock } from '@/hooks/useScrollLock';
 
 interface ProjectModalProps {
     projectId: string;
     onClose: () => void;
 }
 
-// Shared image container component to eliminate repetition
-const ModalImage = ({
-    image,
-    projectId,
-    index,
-    isSingleColumn,
-    layoutTransition
-}: {
-    image: ProjectImage;
-    projectId: string;
-    index: number;
-    isSingleColumn: boolean;
-    layoutTransition: object;
-}) => (
-    <motion.div
-        layoutId={`${projectId}-img-${index + 1}`}
-        transition={{ layout: layoutTransition }}
-        className={`bg-stone-900 relative rounded-lg overflow-hidden ${isSingleColumn ? 'h-auto' : 'h-[320px] md:h-[420px] lg:h-[520px]'
-            }`}
-    >
-        <img
-            alt={image.alt}
-            className={isSingleColumn ? 'w-full h-auto block' : 'h-full w-full'}
-            style={buildImgStyle(image, 'contain')}
-            src={image.src}
-        />
-        <div
-            aria-hidden="true"
-            className="absolute border border-white/10 inset-0 pointer-events-none rounded-lg shadow-[41px_57px_20px_0px_rgba(0,0,0,0),26px_37px_18px_0px_rgba(0,0,0,0.01)]"
-        />
-    </motion.div>
-);
-
 export default function ProjectModal({ projectId, onClose }: ProjectModalProps) {
+    const { getProjectById } = useProjectData();
     const {
         backdropFadeDuration,
         backdropOpacity,
@@ -63,12 +31,7 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
     } = useAnimationControls();
 
     // Prevent body scroll when modal is open
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = 'unset';
-        };
-    }, []);
+    useScrollLock(true);
 
     // Close on escape key
     useEffect(() => {
@@ -99,7 +62,8 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
                 animate={{ opacity: backdropOpacity }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: backdropFadeDuration }}
-                className="fixed inset-0 bg-black z-[100] backdrop-blur-sm"
+
+                className="fixed inset-0 bg-black/opacity z-[100] backdrop-blur-sm"
                 style={{ backgroundColor: `rgba(0, 0, 0, ${backdropOpacity})` }}
                 onClick={onClose}
             />
@@ -154,19 +118,8 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
 
                         {/* Image Grid */}
                         <div className="w-full">
-                            {!isSingleColumnProject && (
-                                <style>{`
-                  @media (min-width: 1024px) {
-                    .image-grid-modal {
-                      grid-template-columns: 3fr 2fr !important;
-                    }
-                    .image-grid-modal > :nth-child(3) {
-                      grid-column: 1 / -1;
-                    }
-                  }
-                `}</style>
-                            )}
-                            <div className="image-grid-modal grid grid-cols-1 gap-8">
+
+                            <div className={`grid grid-cols-1 gap-8 ${!isSingleColumnProject ? 'lg:grid-cols-[3fr_2fr] [&>*:nth-child(3)]:lg:col-span-full' : ''}`}>
                                 {img3 && <ModalImage image={img3} projectId={projectId} index={2} isSingleColumn={isSingleColumnProject} layoutTransition={layoutTransition} />}
                                 {img2 && <ModalImage image={img2} projectId={projectId} index={1} isSingleColumn={isSingleColumnProject} layoutTransition={layoutTransition} />}
                                 {img1 && <ModalImage image={img1} projectId={projectId} index={0} isSingleColumn={isSingleColumnProject} layoutTransition={layoutTransition} />}
@@ -178,3 +131,4 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
         </AnimatePresence>
     );
 }
+

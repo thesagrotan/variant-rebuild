@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { buildImgStyle } from '../lib/imageStyle';
-import { DIMENSIONS, CLASSES } from '../config/tokens';
-import type { ProjectImage } from '../data/projects';
+import { buildImgStyle } from '../../lib/imageStyle';
+import { DIMENSIONS, CLASSES } from '../../config/tokens';
+import type { ProjectImage } from '../../data/projects';
 
 interface AnimationConfig {
     hover: { scale: number; duration: number };

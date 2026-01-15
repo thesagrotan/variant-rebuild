@@ -1,4 +1,18 @@
-export const siteContent = {
+export interface SiteContent {
+    hero: {
+        intro: string;
+        experience: string;
+        cta: string;
+        email: string;
+    };
+    selectedWork: string;
+    helpWith: {
+        heading: string;
+        links: string[][];
+    };
+}
+
+export const siteContent: SiteContent = {
     hero: {
         intro: "I'm Daniel Campagne, **a product designer** who transforms complex systems into intuitive experiences while helping brands tell their stories effectively.",
         experience: "**With over 15 years of experience** for the last years helping startups on b2b and b2c solutions  in the areas fo mobility, fintech, DeFi, and digital health.",

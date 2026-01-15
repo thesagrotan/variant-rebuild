@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useStyles } from './StylesContext';
+import { useStyles } from '../context/StylesContext';
 
 export const GlobalStyler = () => {
     const { styles } = useStyles();
