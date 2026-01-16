@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import styles from "./styles.json";
+import "../globals.css";
+import styles from "../styles.json";
 import { StylesProvider } from "@/components/context/StylesContext";
 import { StyleTweaker } from "@/components/style/StyleTweaker";
 import { GlobalStyler } from "@/components/style/GlobalStyler";

@@ -4,11 +4,14 @@ import React, { useEffect, useState } from 'react';
 import { motion, useTransform } from 'framer-motion';
 import { useScrollContext } from '@/components/context/ScrollContext';
 import { Frame } from './Frame';
-import { FRAMES } from '@/lib/frames';
+import { FrameConfig } from '@/lib/frames'; // Import Type, remove constant import
 import { FrameContent } from './FrameContent';
 
+interface CanvasProps {
+    frames: FrameConfig[];
+}
 
-export const Canvas = () => {
+export const Canvas = ({ frames = [] }: CanvasProps) => {
     const [isClient, setIsClient] = useState(false);
     const [windowSize, setWindowSize] = useState({ width: 1440, height: 900 });
 
@@ -56,7 +59,7 @@ export const Canvas = () => {
             <div className="Canvas-overlay absolute inset-0 bg-[var(--text-primary)]/5 backdrop-blur-[0.5px] pointer-events-none" />
 
             <motion.div style={{ opacity }} className="absolute inset-0 pointer-events-none">
-                {FRAMES.map((frame) => {
+                {frames.map((frame) => {
                     const { x, y } = getPos(frame.initialX.relX, frame.initialX.relY, frame.initialX.w, frame.initialX.h);
 
                     return (

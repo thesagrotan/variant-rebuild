@@ -8,11 +8,16 @@ import { useScrollContext } from '@/components/context/ScrollContext';
 import { HomeContent } from './HomeContent';
 import { ChatWidget } from './ChatWidget';
 
+import { Project } from '@/data/projects';
+import { SiteContent } from '@/data/siteContent';
+
 interface MainContentProps {
     onProjectClick?: (projectId: string) => void;
+    projects: Project[];
+    siteContent: SiteContent;
 }
 
-export const MainContent = ({ onProjectClick }: MainContentProps) => {
+export const MainContent = ({ onProjectClick, projects, siteContent }: MainContentProps) => {
     const { styles } = useStyles();
     const { scrollY } = useScrollContext();
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -61,7 +66,11 @@ export const MainContent = ({ onProjectClick }: MainContentProps) => {
                 className="MainContent-scrollArea h-screen flex flex-col gap-4 pt-[75vh] justify-start overflow-scroll scrollbar-hide mx-auto pb-32 w-full"
                 style={{ pointerEvents: chatActive ? 'none' : 'auto' }}
             >
-                <HomeContent onProjectClick={onProjectClick} />
+                <HomeContent
+                    onProjectClick={onProjectClick}
+                    projects={projects}
+                    siteContent={siteContent}
+                />
             </motion.div>
 
             {/* Chat Input */}

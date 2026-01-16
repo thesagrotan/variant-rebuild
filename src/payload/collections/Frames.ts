@@ -1,4 +1,4 @@
-import { CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload'
 
 export const Frames: CollectionConfig = {
     slug: 'frames',
@@ -46,7 +46,7 @@ export const Frames: CollectionConfig = {
             },
         },
         {
-            name: 'position',
+            name: 'initialX',
             type: 'group',
             fields: [
                 {
@@ -61,23 +61,35 @@ export const Frames: CollectionConfig = {
                     required: true,
                     admin: { description: 'Relative Y position' },
                 },
+                {
+                    name: 'w',
+                    type: 'number',
+                    required: true,
+                    admin: { description: 'Initial Width' },
+                },
+                {
+                    name: 'h',
+                    type: 'number',
+                    required: true,
+                    admin: { description: 'Initial Height' },
+                },
             ],
         },
         {
-            name: 'dimensions',
-            type: 'group',
-            fields: [
-                {
-                    name: 'width',
-                    type: 'number',
-                    required: true,
-                },
-                {
-                    name: 'height',
-                    type: 'number',
-                    required: true,
-                },
-            ],
+            name: 'width',
+            type: 'number',
+            required: true,
+            admin: {
+                description: 'Full width',
+            },
+        },
+        {
+            name: 'height',
+            type: 'number',
+            required: true,
+            admin: {
+                description: 'Full height',
+            },
         },
         {
             name: 'rotation',

@@ -2,18 +2,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { useAnimationControls } from '../ui/AnimationControls';
-import { useProjectData } from '@/hooks/useProjectData';
+// import { useProjectData } from '@/hooks/useProjectData'; // Removed
 import { getModalVariants } from '../../animation/modalVariants';
 import { ModalImage } from './ModalImage';
 import { useScrollLock } from '@/hooks/useScrollLock';
+import { Project } from '@/data/projects';
 
 interface ProjectModalProps {
     projectId: string;
+    project: Project; // Added
     onClose: () => void;
 }
 
-export default function ProjectModal({ projectId, onClose }: ProjectModalProps) {
-    const { getProjectById } = useProjectData();
+export default function ProjectModal({ projectId, project, onClose }: ProjectModalProps) {
+    // const { getProjectById } = useProjectData(); // Removed
     const {
         backdropFadeDuration,
         backdropOpacity,
@@ -42,7 +44,7 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
         return () => window.removeEventListener('keydown', handleEscape);
     }, [onClose]);
 
-    const project = getProjectById(projectId);
+    // const project = getProjectById(projectId); // Removed
 
     if (!project) return null;
 

@@ -3,8 +3,9 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { parseBold } from '@/data/siteContent';
-import { useSiteContent } from '@/hooks/useSiteContent';
-import { useProjectData } from '@/hooks/useProjectData';
+// import { parseBold } from '@/data/siteContent'; // Duplicate removed
+// import { useSiteContent } from '@/hooks/useSiteContent'; // Removed
+// import { useProjectData } from '@/hooks/useProjectData'; // Removed
 import PortfolioProjectCard from '@/components/project/PortfolioProjectCard';
 import ProjectLink from '@/components/project/ProjectLink';
 import { useAnimationControls } from '@/components/ui/AnimationControls';
@@ -39,13 +40,18 @@ const FadeInSection = ({ children, className = '', delay = 0, fadeOnly = false }
     );
 };
 
+import { Project } from '@/data/projects';
+import { SiteContent } from '@/data/siteContent';
+
 interface HomeContentProps {
     onProjectClick?: (projectId: string) => void;
+    projects: Project[];
+    siteContent: SiteContent;
 }
 
-export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
-    const siteContent = useSiteContent();
-    const { projects } = useProjectData();
+export const HomeContent = ({ onProjectClick, projects, siteContent }: HomeContentProps) => {
+    // const siteContent = useSiteContent(); // Removed
+    // const { projects } = useProjectData(); // Removed
     const { theme } = useStyles();
     const {
         cardHoverScale,
