@@ -114,24 +114,11 @@ export const Frame = ({
                             width,
                             height,
                             transform: `scale(${scale})`,
-                            transformOrigin: 'top left'
+                            transformOrigin: 'top left',
+                            touchAction: 'none',
+                            userSelect: 'none',
                         }}
                     >
-                        {/* Corner Decorations */}
-                        <div className="absolute top-2 left-2 flex gap-[3px] items-center pointer-events-none opacity-40 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
-                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-muted)]" />
-                        </div>
-                        <div className="absolute top-2 right-2 pointer-events-none opacity-20 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
-                        </div>
-                        <div className="absolute bottom-2 left-2 pointer-events-none opacity-20 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
-                        </div>
-                        <div className="absolute bottom-2 right-2 pointer-events-none opacity-20 z-20">
-                            <div className="w-[3px] h-[3px] rounded-full bg-[var(--text-primary)]" />
-                        </div>
-
                         {children}
                     </div>
                 </div>

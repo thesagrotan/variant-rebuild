@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useTransform } from 'framer-motion';
 import { useScrollContext } from '@/components/context/ScrollContext';
+import { useStyles } from '@/components/context/StylesContext';
 import { Frame } from './Frame';
 import { FrameConfig } from '@/lib/frames'; // Import Type, remove constant import
 import { FrameContent } from './FrameContent';
@@ -26,6 +27,7 @@ export const Canvas = ({ frames = [] }: CanvasProps) => {
     }, []);
 
     const { scrollY } = useScrollContext();
+    const { showGuides } = useStyles();
     const opacity = useTransform(scrollY, [0, 600], [1, 0]);
 
     if (!isClient) return <div className="Canvas fixed inset-0 z-0" />;
@@ -52,7 +54,10 @@ export const Canvas = ({ frames = [] }: CanvasProps) => {
             {/* Grid background */}
             <div
                 className="Canvas-grid absolute inset-0 opacity-[0.03] pointer-events-none"
-                style={{ backgroundImage: 'url(/assets/grid.png)', backgroundSize: '128px 128px' }}
+                style={{
+                    backgroundImage: 'url(/assets/grid.png)',
+                    backgroundSize: showGuides ? 'calc(100% / 12) calc(100% / 12)' : '128px 128px'
+                }}
             />
 
             {/* Blur/Grain Layer */}

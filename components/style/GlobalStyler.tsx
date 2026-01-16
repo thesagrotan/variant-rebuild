@@ -18,6 +18,14 @@ export const GlobalStyler = () => {
         if (styles.globals) {
             document.body.style.color = styles.globals.text.startsWith('text-') ? '' : styles.globals.text;
             document.body.style.background = styles.globals.background;
+
+            if (styles.globals.bgSolid &&
+                !styles.globals.bgSolid.includes('var(') &&
+                !styles.globals.bgSolid.startsWith('bg-')) {
+                document.documentElement.style.setProperty('--bg-solid', styles.globals.bgSolid);
+            } else {
+                document.documentElement.style.removeProperty('--bg-solid');
+            }
         }
 
         return () => {

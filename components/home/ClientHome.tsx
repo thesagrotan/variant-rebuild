@@ -43,9 +43,9 @@ export default function ClientHome({ projects, frames, siteContent }: ClientHome
                     <Canvas frames={frames} />
 
                     {/* Bottom Content Area (Manifesto + Email Input + Selected Work) */}
-                    <div className="max-w-[1440px] fixed bottom-0 left-0 w-full h-full z-20 flex flex-col items-start p-16 pl-60 justify-end pointer-events-none">
+                    <div className="max-w-[1440px] fixed bottom-0 left-0 w-full h-full z-20 flex flex-col items-start p-[12vh] pl-[16vw] justify-end pointer-events-none">
                         {/* Chat container needs pointer-events-auto for children */}
-                        <div className="w-full max-w-[424px] pointer-events-auto pb-8">
+                        <div className="w-full max-w-[424px] pointer-events-auto">
                             <MainContent
                                 onProjectClick={handleProjectClick}
                                 projects={projects}

@@ -80,8 +80,14 @@ export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
       </motion.div>
 
       {/* Gradient overlays */}
-      <div className="absolute bottom-0 left-0 top-0 w-[160px] bg-gradient-to-r from-bg-solid to-bg-solid/0 pointer-events-none z-10" />
-      <div className="absolute bottom-0 right-0 top-0 w-[160px] bg-gradient-to-l from-bg-solid to-bg-solid/0 pointer-events-none z-10" />
+      <div
+        className="absolute bottom-0 left-0 top-0 w-[160px] pointer-events-none z-10"
+        style={{ background: 'linear-gradient(to right, var(--bg-solid), transparent)' }}
+      />
+      <div
+        className="absolute bottom-0 right-0 top-0 w-[160px] pointer-events-none z-10"
+        style={{ background: 'linear-gradient(to left, var(--bg-solid), transparent)' }}
+      />
     </div>
   );
 }

@@ -22,7 +22,7 @@ export const Guides = () => {
                         src="/guides.svg"
                         alt="Viewport Guides"
                         fill
-                        className="object-cover opacity-50"
+                        className="object-fill opacity-50"
                         priority
                     />
                 </motion.div>

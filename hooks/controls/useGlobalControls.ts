@@ -47,19 +47,24 @@ export const useGlobalControls = () => {
             }
         }
 
-        const newGlobals = {
-            globals: {
-                background,
-                text: values.text,
-                showGuides: values.showGuides,
-            },
-        };
+        const current = styles?.globals || {};
+        const bgSolid = typeof values.bgValue === 'string' ? values.bgValue.trim() : values.bgValue;
 
-        // We can't easily deep compare entire object here without reconstruction
-        // But patchStyles handles merging. We should probably only patch if changed.
-        // A simple JSON stringify check of just this section:
-        if (JSON.stringify(newGlobals.globals) !== JSON.stringify(styles?.globals)) {
-            patchStyles(newGlobals);
+        const hasChanges =
+            background !== current.background ||
+            bgSolid !== current.bgSolid ||
+            values.text !== current.text ||
+            values.showGuides !== (current.showGuides || false);
+
+        if (hasChanges) {
+            patchStyles({
+                globals: {
+                    background,
+                    bgSolid,
+                    text: values.text,
+                    showGuides: values.showGuides,
+                },
+            });
         }
 
     }, [values, patchStyles, styles?.globals]);

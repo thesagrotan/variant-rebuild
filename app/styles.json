@@ -16,7 +16,7 @@
             "itemInactive": "text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--glass-hover)]"
         },
         "chat": {
-            "wrapper": "flex flex-col gap-8 w-[400px] max-w-[var(--max-page-content-width)] relative z-10 pb-4",
+            "wrapper": "flex flex-col gap-8 w-full relative z-10",
             "inputForm": "relative flex items-center bg-[var(--glass-bg)] border border-[var(--border-subtle)] rounded-[14px] transition-all duration-500 ease-premium overflow-hidden"
         }
     }
