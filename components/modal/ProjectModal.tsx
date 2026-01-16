@@ -7,6 +7,7 @@ import { getModalVariants } from '../../animation/modalVariants';
 import { ModalImage } from './ModalImage';
 import { useScrollLock } from '@/hooks/useScrollLock';
 import { Project } from '@/data/projects';
+import { useStyles } from '../context/StylesContext';
 
 interface ProjectModalProps {
     projectId: string;
@@ -15,6 +16,7 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ projectId, project, onClose }: ProjectModalProps) {
+    const { styles } = useStyles();
     // const { getProjectById } = useProjectData(); // Removed
     const {
         backdropFadeDuration,
@@ -77,8 +79,14 @@ export default function ProjectModal({ projectId, project, onClose }: ProjectMod
                 className="fixed inset-0 z-[101] overflow-y-auto overscroll-contain"
                 style={{ transformOrigin: 'center center', WebkitOverflowScrolling: 'touch', willChange: 'transform' }}
             >
-                <div className="bg-[var(--bg-solid)] min-h-full w-full">
-                    <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16 py-8 md:py-16">
+                <div
+                    className="relative min-h-full w-full transition-colors duration-300 ease-out"
+                    style={{ background: styles.globals?.background ?? 'var(--bg-solid)' }}
+                >
+                    {/* Background Overlay to match Canvas.tsx */}
+                    <div className="absolute inset-0 bg-[var(--text-primary)]/5 backdrop-blur-[0.5px] pointer-events-none" />
+
+                    <div className="relative max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16 py-8 md:py-16">
                         {/* Back button and Chat button */}
                         <div className="flex justify-between items-center mb-16">
                             <motion.button

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useAnimationControls } from './ui/AnimationControls';
 import Image from 'next/image';
 import { CarouselIcon as ICarouselIcon } from '@/data/siteContent';
+import { useStyles } from '@/components/context/StylesContext';
 
 /**
  * CarouselIcon Component
@@ -47,6 +48,7 @@ interface InfiniteCarouselProps {
 
 export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
   const { carouselEnabled, carouselDuration } = useAnimationControls();
+  const { styles } = useStyles();
 
   if (!icons || icons.length === 0) {
     return null;
@@ -55,6 +57,8 @@ export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
   // Each icon is 48px + 8px gap = 56px
   // Calculate row width dynamically based on number of icons
   const rowWidth = icons.length * 56; // 48px icon + 8px gap
+
+  const bgColor = styles.globals?.background ?? 'var(--bg-solid)';
 
   return (
     <div className="relative h-[48px] overflow-hidden max-w-[480px] w-full">
@@ -80,14 +84,29 @@ export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
       </motion.div>
 
       {/* Gradient overlays */}
-      <div
-        className="absolute bottom-0 left-0 top-0 w-[160px] pointer-events-none z-10"
-        style={{ background: 'linear-gradient(to right, var(--bg-solid), transparent)' }}
-      />
-      <div
-        className="absolute bottom-0 right-0 top-0 w-[160px] pointer-events-none z-10"
-        style={{ background: 'linear-gradient(to left, var(--bg-solid), transparent)' }}
-      />
+      {/* Left Gradient */}
+      <div className="absolute bottom-0 left-0 top-0 w-[160px] pointer-events-none z-10">
+        <div
+          className="absolute inset-0"
+          style={{ background: `linear-gradient(to right, ${bgColor}, transparent)` }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.05]"
+          style={{ background: 'linear-gradient(to right, var(--text-primary), transparent)' }}
+        />
+      </div>
+
+      {/* Right Gradient */}
+      <div className="absolute bottom-0 right-0 top-0 w-[160px] pointer-events-none z-10">
+        <div
+          className="absolute inset-0"
+          style={{ background: `linear-gradient(to left, ${bgColor}, transparent)` }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.05]"
+          style={{ background: 'linear-gradient(to left, var(--text-primary), transparent)' }}
+        />
+      </div>
     </div>
   );
 }
