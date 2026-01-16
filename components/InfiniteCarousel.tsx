@@ -1,68 +1,60 @@
 import { motion } from 'framer-motion';
-import { carouselIconSvgs, getAvailableIcons } from '../lib/svgLoader';
 import { useAnimationControls } from './ui/AnimationControls';
+import Image from 'next/image';
+import { CarouselIcon as ICarouselIcon } from '@/data/siteContent';
 
 /**
  * CarouselIcon Component
- * Renders an icon from the carousel folder dynamically as a complete SVG
+ * Renders an icon from Payload Media
  */
 interface CarouselIconProps {
-  name: string;
+  icon: ICarouselIcon;
 }
 
-function CarouselIcon({ name }: CarouselIconProps) {
-  const svgContent = carouselIconSvgs[name];
-
-  if (!svgContent) {
-    return null;
-  }
-
+function CarouselIcon({ icon }: CarouselIconProps) {
   return (
     <div className="box-border relative rounded-[7px] shrink-0 size-[48px] flex items-center justify-center p-2">
       <div aria-hidden="true" className="absolute border border-border-subtle border-solid inset-0 pointer-events-none rounded-[7px]" />
-      <div
-        className="w-full h-full flex items-center justify-center [&>svg]:max-w-full [&>svg]:max-h-full [&>svg]:w-auto [&>svg]:h-auto"
-        dangerouslySetInnerHTML={{ __html: svgContent }}
-      />
+      <div className="w-full h-full flex items-center justify-center relative">
+        <Image
+          src={icon.url}
+          alt={icon.alt}
+          fill
+          className="object-contain p-2"
+        />
+      </div>
     </div>
   );
 }
 
 /**
  * IconsRow Component
- * Renders all available carousel icons in a row
+ * Renders the provided icons in a row
  */
-function IconsRow() {
-  // Get all available carousel icon names (excluding shared icons if needed)
-  const iconNames = getAvailableIcons('carousel').filter((name: string) =>
-    // Exclude shared utility icons from display
-    !name.includes('rounded-rect') &&
-    !name.includes('vercel-') &&
-    !name.includes('ruby-part') &&
-    !name.includes('photoshop-')
-  );
-
+function IconsRow({ icons }: { icons: ICarouselIcon[] }) {
   return (
     <div className="content-stretch flex gap-[8px] items-center shrink-0">
-      {iconNames.map((iconName: string) => (
-        <CarouselIcon key={iconName} name={iconName} />
+      {icons.map((icon, idx) => (
+        <CarouselIcon key={`${icon.url}-${idx}`} icon={icon} />
       ))}
     </div>
   );
 }
 
-export default function InfiniteCarousel() {
+interface InfiniteCarouselProps {
+  icons: ICarouselIcon[];
+}
+
+export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
   const { carouselEnabled, carouselDuration } = useAnimationControls();
+
+  if (!icons || icons.length === 0) {
+    return null;
+  }
 
   // Each icon is 48px + 8px gap = 56px
   // Calculate row width dynamically based on number of icons
-  const iconNames = getAvailableIcons('carousel').filter((name: string) =>
-    !name.includes('rounded-rect') &&
-    !name.includes('vercel-') &&
-    !name.includes('ruby-part') &&
-    !name.includes('photoshop-')
-  );
-  const rowWidth = iconNames.length * 56; // 48px icon + 8px gap
+  const rowWidth = icons.length * 56; // 48px icon + 8px gap
 
   return (
     <div className="relative h-[48px] overflow-hidden max-w-[480px] w-full">
@@ -82,9 +74,9 @@ export default function InfiniteCarousel() {
           },
         }}
       >
-        <IconsRow />
-        <IconsRow />
-        <IconsRow />
+        <IconsRow icons={icons} />
+        <IconsRow icons={icons} />
+        <IconsRow icons={icons} />
       </motion.div>
 
       {/* Gradient overlays */}

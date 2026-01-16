@@ -5,6 +5,7 @@ import { buildConfig } from 'payload'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+import { Pages } from './src/payload/collections/Pages.ts'
 import { Media } from './src/payload/collections/Media.ts'
 import { Projects } from './src/payload/collections/Projects.ts'
 import { Frames } from './src/payload/collections/Frames.ts'
@@ -24,7 +25,7 @@ export default buildConfig({
     },
 
     // Collections
-    collections: [Users, Media, Projects, Frames],
+    collections: [Users, Media, Projects, Frames, Pages],
 
     // Globals
     globals: [SiteSettings],

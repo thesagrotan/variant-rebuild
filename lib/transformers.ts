@@ -2,7 +2,7 @@
 import { Project, ProjectImage, ProjectImageSettings } from '@/data/projects'
 import { FrameConfig } from '@/lib/frames'
 // import { SiteContent } from '@/data/siteContent' // Is exported as const, but type is exported too.
-import type { SiteContent } from '@/data/siteContent'
+import { SiteContent, siteContent } from '@/data/siteContent'
 
 // Simple Lexical to Markdown string converter
 function lexicalToMarkdown(root: any): string {
@@ -90,20 +90,47 @@ export function transformFrame(doc: any): FrameConfig {
     }
 }
 
-export function transformSiteSettings(doc: any): SiteContent {
-    return {
-        hero: {
-            intro: lexicalToMarkdown(doc.hero.intro.root),
-            experience: lexicalToMarkdown(doc.hero.experience.root),
-            approach: lexicalToMarkdown(doc.hero.approach.root),
-            lead: lexicalToMarkdown(doc.hero.lead.root),
-            cta: doc.hero.cta,
-            email: doc.hero.email
-        },
-        selectedWork: doc.selectedWorkTitle,
-        helpWith: {
-            heading: doc.helpWith.heading,
-            links: doc.helpWith.links.map((row: any) => row.row.map((item: any) => item.text))
+export function transformPage(doc: any): SiteContent {
+    if (!doc || !doc.layout) {
+        return siteContent; // Return default if not found
+    }
+
+    return doc.layout.map((block: any) => {
+        switch (block.blockType) {
+            case 'richText':
+                return {
+                    type: 'richText',
+                    content: lexicalToMarkdown(block.content?.root),
+                    style: block.style || 'default'
+                };
+            case 'carousel':
+                return {
+                    type: 'carousel',
+                    icons: block.carousel?.map((item: any) => ({
+                        url: getMediaUrl(item.icon),
+                        alt: item.icon?.alt || ''
+                    })) || []
+                };
+            case 'selectedWorks':
+                return {
+                    type: 'selectedWorks',
+                    title: block.title
+                };
+            case 'helpWith':
+                return {
+                    type: 'helpWith',
+                    heading: block.heading,
+                    links: block.links?.map((row: any) => row.row.map((item: any) => item.text)) || []
+                };
+            default:
+                return null;
         }
+    }).filter(Boolean) as SiteContent;
+}
+
+export function transformSiteSettings(doc: any): { siteTitle: string, siteDescription: string } {
+    return {
+        siteTitle: doc.metadata?.siteTitle || 'Portfolio',
+        siteDescription: doc.metadata?.siteDescription || ''
     }
 }

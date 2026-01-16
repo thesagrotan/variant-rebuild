@@ -2,7 +2,9 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { parseBold } from '@/data/siteContent';
+import { cn } from '@/lib/utils';
+import { Project } from '@/data/projects';
+import { SiteContent, parseBold } from '@/data/siteContent';
 // import { parseBold } from '@/data/siteContent'; // Duplicate removed
 // import { useSiteContent } from '@/hooks/useSiteContent'; // Removed
 // import { useProjectData } from '@/hooks/useProjectData'; // Removed
@@ -40,8 +42,7 @@ const FadeInSection = ({ children, className = '', delay = 0, fadeOnly = false }
     );
 };
 
-import { Project } from '@/data/projects';
-import { SiteContent } from '@/data/siteContent';
+
 
 interface HomeContentProps {
     onProjectClick?: (projectId: string) => void;
@@ -64,77 +65,100 @@ export const HomeContent = ({ onProjectClick, projects, siteContent }: HomeConte
 
     return (
         <>
-            <FadeInSection className="mb-8" fadeOnly>
-                <Image
-                    src={theme === 'light' ? "/assets/logo-light.svg" : "/assets/logo.svg"}
-                    alt="Logo"
-                    width={64}
-                    height={64}
-                    className="mb-12"
-                />
-                <p className="text-4xl font-medium leading-[1.3] tracking-tight">
-                    {parseBold(siteContent.hero.lead).map(({ text, bold, key }) => (
-                        <span key={key} className={bold ? 'text-text-secondary opacity-80' : 'text-text-primary'}>
-                            {text}
-                        </span>
-                    ))}
-                </p>
-            </FadeInSection>
+            <div className="fixed top-[16vh] left-[8vw] z-50 pointer-events-none">
+                <FadeInSection fadeOnly>
+                    <Image
+                        src={theme === 'light' ? "/assets/logo-light.svg" : "/assets/logo.svg"}
+                        alt="Logo"
+                        width={64}
+                        height={64}
+                        className="pointer-events-auto"
+                    />
+                </FadeInSection>
+            </div>
+            <div className="h-32" />
 
+            {siteContent.map((block, index) => {
+                const delay = 0.1 + index * 0.05;
 
+                switch (block.type) {
+                    case 'richText':
+                        return (
+                            <FadeInSection
+                                key={index}
+                                className={cn(
+                                    "flex flex-col gap-8 leading-[1.5]",
+                                    block.style === 'lead'
+                                        ? "text-4xl font-medium tracking-tight mb-8"
+                                        : "text-2xl text-text-muted mt-8"
+                                )}
+                                delay={delay}
+                                fadeOnly={block.style === 'lead'}
+                            >
+                                <p className={block.style === 'lead' ? "leading-[1.3]" : "whitespace-pre-wrap"}>
+                                    {parseBold(block.content).map(({ text, bold, key }) => (
+                                        <span
+                                            key={key}
+                                            className={cn(
+                                                block.style === 'lead'
+                                                    ? (bold ? 'text-text-secondary opacity-80' : 'text-text-primary')
+                                                    : (bold ? 'text-text-primary font-medium' : '')
+                                            )}
+                                        >
+                                            {text}
+                                        </span>
+                                    ))}
+                                </p>
+                            </FadeInSection>
+                        );
 
-            <FadeInSection className="flex flex-col gap-8 text-2xl text-text-muted leading-[1.5]" delay={0.1}>
-                {[siteContent.hero.intro, siteContent.hero.experience].map((text, idx) => (
-                    <p key={idx} className={`${idx === 1 ? 'whitespace-pre-wrap' : ''}`}>
-                        {parseBold(text).map(({ text: t, bold, key }) => (
-                            <span key={key} className={bold ? 'text-text-primary font-medium' : ''}>{t}</span>
-                        ))}
-                    </p>
-                ))}
-            </FadeInSection>
-            <FadeInSection className="mt-8 mb-8 flex justify-start w-full" delay={0.15}>
-                <div className="w-full max-w-[480px]">
-                    <InfiniteCarousel />
-                </div>
-            </FadeInSection>
-            <FadeInSection className="flex flex-col gap-8 text-2xl text-text-muted leading-[1.5]" delay={0.2}>
-                <p className="">
-                    {parseBold(siteContent.hero.approach).map(({ text: t, bold, key }) => (
-                        <span key={key} className={bold ? 'text-text-primary font-medium' : ''}>{t}</span>
-                    ))}
-                </p>
-            </FadeInSection>
+                    case 'carousel':
+                        return (
+                            <FadeInSection key={index} className="mt-8 mb-8 flex justify-start w-full" delay={delay}>
+                                <div className="w-full max-w-[480px]">
+                                    <InfiniteCarousel icons={block.icons} />
+                                </div>
+                            </FadeInSection>
+                        );
 
+                    case 'selectedWorks':
+                        return (
+                            <FadeInSection key={index} className="flex flex-col gap-10 w-full mt-24" delay={delay}>
+                                <h2 className="text-xl font-medium text-text-primary">{block.title}</h2>
+                                <div className={`flex flex-col ${CLASSES.cardGap}`}>
+                                    {projects.map((project) => (
+                                        <PortfolioProjectCard
+                                            key={project.id}
+                                            project={project}
+                                            onClick={onProjectClick || (() => { })}
+                                            animation={{
+                                                hover: { scale: cardHoverScale, duration: cardHoverDuration },
+                                                layout: { type: layoutType, damping: layoutExitDamping, stiffness: layoutStiffness, duration: layoutDuration }
+                                            }}
+                                        />
+                                    ))}
+                                </div>
+                            </FadeInSection>
+                        );
 
-            {/* Selected Work */}
-            <FadeInSection className="flex flex-col gap-10 w-full mt-24" delay={0.2}>
-                <h2 className="text-xl font-medium text-text-primary">{siteContent.selectedWork}</h2>
-                <div className={`flex flex-col ${CLASSES.cardGap}`}>
-                    {projects.map((project) => (
-                        <PortfolioProjectCard
-                            key={project.id}
-                            project={project}
-                            onClick={onProjectClick || (() => { })}
-                            animation={{
-                                hover: { scale: cardHoverScale, duration: cardHoverDuration },
-                                layout: { type: layoutType, damping: layoutExitDamping, stiffness: layoutStiffness, duration: layoutDuration }
-                            }}
-                        />
-                    ))}
-                </div>
-            </FadeInSection>
+                    case 'helpWith':
+                        return (
+                            <FadeInSection key={index} className="mt-20 flex flex-col gap-8 w-full" delay={delay}>
+                                <h2 className="text-xl font-medium text-text-primary">{block.heading}</h2>
+                                <div className="flex flex-wrap gap-x-8 gap-y-4">
+                                    {block.links.map((column, idx) => (
+                                        <div key={idx} className={`flex flex-col ${CLASSES.linkColumn}`}>
+                                            {column.map((label) => <ProjectLink key={label} label={label} />)}
+                                        </div>
+                                    ))}
+                                </div>
+                            </FadeInSection>
+                        );
 
-            {/* Here to help you with */}
-            <FadeInSection className="mt-20 flex flex-col gap-8 w-full" delay={0.3}>
-                <h2 className="text-xl font-medium text-text-primary">{siteContent.helpWith.heading}</h2>
-                <div className="flex flex-wrap gap-x-8 gap-y-4">
-                    {siteContent.helpWith.links.map((column, idx) => (
-                        <div key={idx} className={`flex flex-col ${CLASSES.linkColumn}`}>
-                            {column.map((label) => <ProjectLink key={label} label={label} />)}
-                        </div>
-                    ))}
-                </div>
-            </FadeInSection>
+                    default:
+                        return null;
+                }
+            })}
         </>
     );
 };

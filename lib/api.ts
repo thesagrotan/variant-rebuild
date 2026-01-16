@@ -3,7 +3,7 @@ import config from '@payload-config'
 import { cache } from 'react'
 
 // Import generated types
-import type { Config, Project, Frame, SiteSetting } from '@/payload-types'
+import type { Config, Project, Frame, SiteSetting, Page } from '@/payload-types'
 
 // Singleton for Payload Client
 // Cached to prevent multiple connections in dev mode (hot reload)
@@ -45,6 +45,21 @@ export const getFrames = cache(async (): Promise<Frame[]> => {
         limit: 100,
     })
     return docs
+})
+
+export const getPage = cache(async (slug: string): Promise<Page | null> => {
+    const payload = await getPayloadClient()
+    const { docs } = await payload.find({
+        collection: 'pages',
+        where: {
+            slug: {
+                equals: slug,
+            },
+        },
+        depth: 1,
+        limit: 1,
+    })
+    return docs[0] || null
 })
 
 export const getSiteSettings = cache(async (): Promise<SiteSetting> => {
