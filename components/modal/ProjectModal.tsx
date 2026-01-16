@@ -81,10 +81,9 @@ export default function ProjectModal({ projectId, project, onClose }: ProjectMod
             >
                 <div
                     className="relative min-h-full w-full transition-colors duration-300 ease-out"
-                    style={{ background: styles.globals?.background ?? 'var(--bg-solid)' }}
+                    style={{ background: 'var(--bg-page)' }}
                 >
-                    {/* Background Overlay to match Canvas.tsx */}
-                    <div className="absolute inset-0 bg-[var(--text-primary)]/5 backdrop-blur-[0.5px] pointer-events-none" />
+
 
                     <div className="relative max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16 py-8 md:py-16">
                         {/* Back button and Chat button */}

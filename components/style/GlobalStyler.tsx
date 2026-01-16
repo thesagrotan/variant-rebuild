@@ -17,7 +17,7 @@ export const GlobalStyler = () => {
         // Apply global styles to body
         if (styles.globals) {
             document.body.style.color = styles.globals.text.startsWith('text-') ? '' : styles.globals.text;
-            document.body.style.background = styles.globals.background;
+            document.body.style.background = 'var(--bg-page)';
 
             if (styles.globals.bgSolid &&
                 !styles.globals.bgSolid.includes('var(') &&

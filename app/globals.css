@@ -20,6 +20,8 @@
   --frame-border: rgba(255, 255, 255, 0.15);
 
   /* Shared Constants */
+  --bg-page: color-mix(in srgb, var(--bg-solid), var(--text-primary) 5%);
+
   --rounded-lg: 12px;
   --rounded-md: 9px;
   --max-page-content-width: calc(100vw - 32px);

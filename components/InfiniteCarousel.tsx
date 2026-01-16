@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useAnimationControls } from './ui/AnimationControls';
-import Image from 'next/image';
+import { InlineSVG } from './ui/InlineSVG';
 import { CarouselIcon as ICarouselIcon } from '@/data/siteContent';
 import { useStyles } from '@/components/context/StylesContext';
 
@@ -17,11 +17,10 @@ function CarouselIcon({ icon }: CarouselIconProps) {
     <div className="box-border relative rounded-[7px] shrink-0 size-[48px] flex items-center justify-center p-2">
       <div aria-hidden="true" className="absolute border border-border-subtle border-solid inset-0 pointer-events-none rounded-[7px]" />
       <div className="w-full h-full flex items-center justify-center relative">
-        <Image
+        <InlineSVG
           src={icon.url}
-          alt={icon.alt}
-          fill
-          className="object-contain p-2"
+          aria-label={icon.alt}
+          className="w-full h-full object-contain p-2 [&>svg]:w-full [&>svg]:h-full text-[var(--text-muted)]"
         />
       </div>
     </div>
@@ -58,7 +57,7 @@ export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
   // Calculate row width dynamically based on number of icons
   const rowWidth = icons.length * 56; // 48px icon + 8px gap
 
-  const bgColor = styles.globals?.background ?? 'var(--bg-solid)';
+
 
   return (
     <div className="relative h-[48px] overflow-hidden max-w-[480px] w-full">
@@ -88,11 +87,7 @@ export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
       <div className="absolute bottom-0 left-0 top-0 w-[160px] pointer-events-none z-10">
         <div
           className="absolute inset-0"
-          style={{ background: `linear-gradient(to right, ${bgColor}, transparent)` }}
-        />
-        <div
-          className="absolute inset-0 opacity-[0.05]"
-          style={{ background: 'linear-gradient(to right, var(--text-primary), transparent)' }}
+          style={{ background: `linear-gradient(to right, var(--bg-page), transparent)` }}
         />
       </div>
 
@@ -100,11 +95,7 @@ export default function InfiniteCarousel({ icons }: InfiniteCarouselProps) {
       <div className="absolute bottom-0 right-0 top-0 w-[160px] pointer-events-none z-10">
         <div
           className="absolute inset-0"
-          style={{ background: `linear-gradient(to left, ${bgColor}, transparent)` }}
-        />
-        <div
-          className="absolute inset-0 opacity-[0.05]"
-          style={{ background: 'linear-gradient(to left, var(--text-primary), transparent)' }}
+          style={{ background: `linear-gradient(to left, var(--bg-page), transparent)` }}
         />
       </div>
     </div>

@@ -61,7 +61,7 @@ export const Canvas = ({ frames = [] }: CanvasProps) => {
             />
 
             {/* Blur/Grain Layer */}
-            <div className="Canvas-overlay absolute inset-0 bg-[var(--text-primary)]/5 backdrop-blur-[0.5px] pointer-events-none" />
+            <div className="Canvas-overlay absolute inset-0 backdrop-blur-[0.5px] pointer-events-none" />
 
             <motion.div style={{ opacity }} className="absolute inset-0 pointer-events-none">
                 {frames.map((frame) => {
