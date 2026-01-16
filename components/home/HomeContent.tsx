@@ -1,6 +1,7 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { parseBold } from '@/data/siteContent';
 import { useSiteContent } from '@/hooks/useSiteContent';
 import { useProjectData } from '@/hooks/useProjectData';
@@ -10,6 +11,33 @@ import { useAnimationControls } from '@/components/ui/AnimationControls';
 import Image from 'next/image';
 import { useStyles } from '@/components/context/StylesContext';
 import { CLASSES } from '@/config/tokens';
+import InfiniteCarousel from '@/components/InfiniteCarousel';
+
+interface FadeInSectionProps {
+    children: React.ReactNode;
+    className?: string;
+    delay?: number;
+    fadeOnly?: boolean;
+}
+
+const FadeInSection = ({ children, className = '', delay = 0, fadeOnly = false }: FadeInSectionProps) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: '-50px' });
+
+    const yOffset = fadeOnly ? 0 : 12;
+
+    return (
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: yOffset }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: yOffset }}
+            transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1], delay }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
+};
 
 interface HomeContentProps {
     onProjectClick?: (projectId: string) => void;
@@ -30,7 +58,7 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
 
     return (
         <>
-            <div className="mb-8">
+            <FadeInSection className="mb-8" fadeOnly>
                 <Image
                     src={theme === 'light' ? "/assets/logo-light.svg" : "/assets/logo.svg"}
                     alt="Logo"
@@ -45,8 +73,11 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
                         </span>
                     ))}
                 </p>
-            </div>
-            <div className="flex flex-col gap-8 text-2xl text-text-muted leading-[1.5] max-w-[340px]">
+            </FadeInSection>
+
+
+
+            <FadeInSection className="flex flex-col gap-8 text-2xl text-text-muted leading-[1.5]" delay={0.1}>
                 {[siteContent.hero.intro, siteContent.hero.experience].map((text, idx) => (
                     <p key={idx} className={`${idx === 1 ? 'whitespace-pre-wrap' : ''}`}>
                         {parseBold(text).map(({ text: t, bold, key }) => (
@@ -54,10 +85,23 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
                         ))}
                     </p>
                 ))}
-            </div>
+            </FadeInSection>
+            <FadeInSection className="mt-8 mb-8 flex justify-start w-full" delay={0.15}>
+                <div className="w-full max-w-[480px]">
+                    <InfiniteCarousel />
+                </div>
+            </FadeInSection>
+            <FadeInSection className="flex flex-col gap-8 text-2xl text-text-muted leading-[1.5]" delay={0.2}>
+                <p className="">
+                    {parseBold(siteContent.hero.approach).map(({ text: t, bold, key }) => (
+                        <span key={key} className={bold ? 'text-text-primary font-medium' : ''}>{t}</span>
+                    ))}
+                </p>
+            </FadeInSection>
+
 
             {/* Selected Work */}
-            <div className="flex flex-col gap-10 w-full mt-24">
+            <FadeInSection className="flex flex-col gap-10 w-full mt-24" delay={0.2}>
                 <h2 className="text-xl font-medium text-text-primary">{siteContent.selectedWork}</h2>
                 <div className={`flex flex-col ${CLASSES.cardGap}`}>
                     {projects.map((project) => (
@@ -72,10 +116,10 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
                         />
                     ))}
                 </div>
-            </div>
+            </FadeInSection>
 
             {/* Here to help you with */}
-            <div className={`mt-20 flex flex-col gap-8 w-full`}>
+            <FadeInSection className="mt-20 flex flex-col gap-8 w-full" delay={0.3}>
                 <h2 className="text-xl font-medium text-text-primary">{siteContent.helpWith.heading}</h2>
                 <div className="flex flex-wrap gap-x-8 gap-y-4">
                     {siteContent.helpWith.links.map((column, idx) => (
@@ -84,7 +128,7 @@ export const HomeContent = ({ onProjectClick }: HomeContentProps) => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </FadeInSection>
         </>
     );
 };

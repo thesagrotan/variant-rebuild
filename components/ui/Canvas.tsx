@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { motion, useTransform } from 'framer-motion';
+import { useScrollContext } from '@/components/context/ScrollContext';
 import { Frame } from './Frame';
 import { FRAMES } from '@/lib/frames';
 import { FrameContent } from './FrameContent';
@@ -19,6 +21,9 @@ export const Canvas = () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    const { scrollY } = useScrollContext();
+    const opacity = useTransform(scrollY, [0, 600], [1, 0]);
 
     if (!isClient) return <div className="Canvas fixed inset-0 z-0" />;
 
@@ -50,26 +55,28 @@ export const Canvas = () => {
             {/* Blur/Grain Layer */}
             <div className="Canvas-overlay absolute inset-0 bg-[var(--text-primary)]/5 backdrop-blur-[0.5px] pointer-events-none" />
 
-            {FRAMES.map((frame) => {
-                const { x, y } = getPos(frame.initialX.relX, frame.initialX.relY, frame.initialX.w, frame.initialX.h);
+            <motion.div style={{ opacity }} className="absolute inset-0 pointer-events-none">
+                {FRAMES.map((frame) => {
+                    const { x, y } = getPos(frame.initialX.relX, frame.initialX.relY, frame.initialX.w, frame.initialX.h);
 
-                return (
-                    <Frame
-                        key={frame.id}
-                        tag={frame.tag}
-                        initialX={x}
-                        initialY={y}
-                        relX={frame.initialX.relX}
-                        relY={frame.initialX.relY}
-                        width={frame.width}
-                        height={frame.height}
-                        rotation={frame.rotation}
-                        scale={scale}
-                    >
-                        <FrameContent type={frame.type} src={frame.src} />
-                    </Frame>
-                );
-            })}
+                    return (
+                        <Frame
+                            key={frame.id}
+                            tag={frame.tag}
+                            initialX={x}
+                            initialY={y}
+                            relX={frame.initialX.relX}
+                            relY={frame.initialX.relY}
+                            width={frame.width}
+                            height={frame.height}
+                            rotation={frame.rotation}
+                            scale={scale}
+                        >
+                            <FrameContent type={frame.type} src={frame.src} />
+                        </Frame>
+                    );
+                })}
+            </motion.div>
         </div>
     );
 };

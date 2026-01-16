@@ -17,9 +17,10 @@ export const useGlobalControls = () => {
             // Prepend space to force Leva to infer String input instead of Color input
             bgValue: { label: 'Background', value: ' ' + globals.background, rows: true },
             text: { value: globals.text },
+            showGuides: { value: globals.showGuides || false, label: 'Show Guides' },
         }),
         'Gradient Helper': folder({
-            useGradient: { value: true, label: 'Enable Gradient' },
+            useGradient: { value: false, label: 'Enable Gradient' },
             gradientType: { value: 'radial', options: ['linear', 'radial'], label: 'Type' },
             gradientStart: { value: 'rgba(255, 87, 34, 0.12)', label: 'Start Color' },
             gradientEnd: { value: 'var(--bg-solid)', label: 'End Color' },
@@ -50,6 +51,7 @@ export const useGlobalControls = () => {
             globals: {
                 background,
                 text: values.text,
+                showGuides: values.showGuides,
             },
         };
 

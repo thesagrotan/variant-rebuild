@@ -6,6 +6,7 @@ import { StylesProvider } from "@/components/context/StylesContext";
 import { StyleTweaker } from "@/components/style/StyleTweaker";
 import { GlobalStyler } from "@/components/style/GlobalStyler";
 import { BackgroundLayer } from "@/components/ui/BackgroundLayer";
+import { Guides } from "@/components/ui/Guides";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
           <StyleTweaker />
           <GlobalStyler />
           <BackgroundLayer />
+          <Guides />
           {children}
         </StylesProvider>
       </body>

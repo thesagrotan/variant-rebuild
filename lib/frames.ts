@@ -18,8 +18,8 @@ export const FRAMES: FrameConfig[] = [
         width: 254,
         height: 278,
         rotation: -3,
-        type: 'image',
-        src: '/assets/dummy-frame.png'
+        type: 'video',
+        src: '/video/kai.mp4'
     },
     // {
     //     id: 'productivity-app',

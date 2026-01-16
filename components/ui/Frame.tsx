@@ -75,12 +75,10 @@ export const Frame = ({
         return dist * 0.8 * progress;
     });
 
-    const opacity = useTransform(scrollY, [0, 600], [1, 0]);
-
     return (
         <motion.div
             className="absolute top-0 left-0 pointer-events-none will-change-transform"
-            style={{ x: xOffset, y: yOffset, opacity, zIndex: 0 }}
+            style={{ x: xOffset, y: yOffset, zIndex: 0 }}
         >
             <motion.div
                 drag
@@ -101,12 +99,12 @@ export const Frame = ({
                     duration: 0.8,
                     ease: [0, 0, 0.2, 1]
                 }}
-                className={cn("Frame absolute pointer-events-auto select-none", className)}
+                className={cn("Frame absolute pointer-events-auto select-none group", className)}
                 style={{ x: baseX, y: baseY }}
             >
                 <div className="Frame-animationWrapper flex flex-col gap-[6px]">
                     {tag && (
-                        <div className={cn("Frame-tag", styles.containers.frame.tag)}>
+                        <div className={cn("Frame-tag opacity-0 group-hover:opacity-100 transition-opacity duration-300", styles.containers.frame.tag)}>
                             <span className="text-xs font-medium tracking-tight h-full flex items-center">{tag}</span>
                         </div>
                     )}

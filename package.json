@@ -9,13 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@payloadcms/db-mongodb": "^3.71.1",
+    "@payloadcms/next": "^3.71.1",
+    "@payloadcms/richtext-lexical": "^3.71.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.26.2",
     "leva": "^0.10.1",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
+    "payload": "^3.71.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

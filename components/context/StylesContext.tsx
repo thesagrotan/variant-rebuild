@@ -12,9 +12,9 @@ interface StylesContextType {
     theme: 'dark' | 'light';
     updateStyles: (newStyles: StylesData) => void;
     patchStyles: (partialStyles: StylesData) => void;
-    resetStyles: () => void;
     toggleTheme: () => void;
     setTheme: (theme: 'dark' | 'light') => void;
+    showGuides: boolean;
 }
 
 const StylesContext = createContext<StylesContextType | undefined>(undefined);
@@ -59,7 +59,8 @@ export const StylesProvider = ({
         patchStyles,
         resetStyles,
         toggleTheme,
-        setTheme
+        setTheme,
+        showGuides: styles?.globals?.showGuides || false
     }), [styles, theme, patchStyles, resetStyles, toggleTheme, setTheme]);
 
     return (

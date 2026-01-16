@@ -3,7 +3,7 @@
         {
             "id": "credcore",
             "title": "CredCore",
-            "logo": "/public/images/credcore.svg",
+            "logo": "/images/credcore.svg",
             "year": "2023-2025",
             "categories": [
                 "UX/UI Design",
@@ -52,7 +52,7 @@
             "id": "mobility-platform",
             "title": "Queue",
             "year": "2022-2023",
-            "logo": "/public/images/queue.svg",
+            "logo": "/images/queue.svg",
             "categories": [
                 "Product Design"
             ],

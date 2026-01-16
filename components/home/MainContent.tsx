@@ -58,7 +58,7 @@ export const MainContent = ({ onProjectClick }: MainContentProps) => {
                 onScroll={handleScroll}
                 animate={{ opacity: chatActive ? 0 : 1, y: chatActive ? -20 : 0 }}
                 transition={{ duration: 0.3 }}
-                className="MainContent-scrollArea h-screen flex flex-col gap-4 pt-[80vh] justify-start overflow-scroll scrollbar-hide mx-auto pb-32 w-full"
+                className="MainContent-scrollArea h-screen flex flex-col gap-4 pt-[75vh] justify-start overflow-scroll scrollbar-hide mx-auto pb-32 w-full"
                 style={{ pointerEvents: chatActive ? 'none' : 'auto' }}
             >
                 <HomeContent onProjectClick={onProjectClick} />
